@@ -1,0 +1,6 @@
+baseurl:
+timezone: Europe/Berlin
+permalink: /:categories/:year/:month/:day/:title
+paginate: 9
+markdown: redcarpet
+pygments: true

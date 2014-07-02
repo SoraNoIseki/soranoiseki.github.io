@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<div class="post_title">
+	{{ page.title }}	
+	<span>
+		{% if page.next %}
+		&lt;&lt; <a href="{{page.next.url}}">上一篇</a> 
+		{% else %}
+		&lt;&lt; 这是第一篇
+		{% endif %}
+		☆ 
+		{% if page.previous %}
+		<a href="{{page.previous.url}}">下一篇</a> &gt;&gt;
+		{% else %}
+		这是最后一篇 &gt;&gt;
+		{% endif %}
+	</span>
+</div>
+<div class="post_meta">
+	<span>		
+		{{ page.date | date: "%Y年%m月%d日 %A %Z %R " | replace:'Monday','星期一' | replace:'Tuesday','星期二' | replace:'Wednesday','星期三' | replace:'Thursday','星期四' | replace:'Friday','星期五' | replace:'Saturday','星期六' | replace:'Sunday','星期天' | replace:'年0','年' |  | replace:'月0','月' | replace:'CET','西欧标准时间' | replace:'CEST','西欧夏令时' }} 
+		分类：<a href="{{site.baseurl}}/topic/{{page.categories}}" class="">{{page.categories}}</a>
+		{% for tag in page.tags%}		
+		<img src="{{site.baseurl}}/assets/img/icon_tag.png" />{{tag}}
+		{% endfor %}
+	</span>
+</div>
+<div class="post_content"> {{ content }} </div>
+<div class="post_links">
+	<span class="post_links_next">
+		{% if page.next %}
+		&lt;&lt; <a href="{{page.next.url}}">上一篇：{{page.next.title}}</a> {% else %}
+		&lt;&lt; 这是第一篇
+		{% endif %} 
+	</span> 
+	<span class="post_links_pre"> {% if page.previous %} <a href="{{page.previous.url}}">下一篇：{{page.previous.title}}</a> &gt;&gt;
+		{% else %}
+		这是最后一篇 &gt;&gt;
+		{% endif %}
+	</span>
+	<span class="clearFloat;" /> 
+</div>
+{% include duoshuo_comment.html  %}

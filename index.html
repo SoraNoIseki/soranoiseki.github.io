@@ -1,0 +1,98 @@
+---
+layout: default
+title: 遗迹の二次元列车
+description: "欢迎搭乘遗迹の二次元列车，我是列车长天空の遗迹。"
+---
+<div class="index">
+	<!-- Duoshuo -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"soranoiseki"};
+		(function() {
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';ds.async = true;
+			ds.src = 'http://static.duoshuo.com/embed.js';
+			ds.charset = 'UTF-8';
+			(document.getElementsByTagName('head')[0] 
+			|| document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+	</script>
+	
+	<div class="index_bible">
+	不轻易发怒的，胜过勇士；治服己心的，强如取城。—— 箴言16:32
+	</div>
+	
+	<!-- 最新文章 -->
+	<div class="index_recent_posts">
+		
+		<!-- 最新文章列表和分页 -->
+		<div class="index_recent_posts_preview">
+			<!-- 最新文章列表 -->
+			<div class="index_recent_posts_preview_list">		
+				{% for post in paginator.posts %}
+				<ul>
+					{% capture postid %}{{ post.url | downcase | replace:':','' | replace:'/','' }}{% endcapture %}
+					<li class="index_recent_posts_preview_title">
+					<span>{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+					&raquo; <a href="{{ site.baseurl }}{{ post.url }}#comments" class="ds-thread-count" data-thread-key="{{postid}}" data-count-type="comments"></a>
+					</li>
+				</ul>				
+				{% endfor %}
+			</div>
+			
+			<!-- 分页 -->
+			<div class="pagination">
+				{% if paginator.previous_page %}
+					<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
+				{% else %}
+					<span>&laquo</span>
+				{% endif %}
+			
+				{% for page in (1..paginator.total_pages) limit:16%}
+					{% if page == paginator.page %}
+						{{ page | replace:'9','⑨' }}
+					{% elsif page == 1 %}
+						<a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page | replace:'9','⑨' }}</a>
+					{% else %}
+						<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page | replace:'9','⑨' }}</a>
+					{% endif %}
+				{% endfor %}
+			
+				{% if paginator.next_page <= 16 %}
+					<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
+				{% else %}
+					<span>&raquo;</span>
+				{% endif %}
+			</div>
+		</div>
+		
+		<!-- 最新第一篇文章 -->
+		<div class="index_recent_firstpost">
+			{% for post in site.posts limit:1 %}
+				<div class="index_recent_firstpost_title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
+				<div class="index_recent_firstpost_meta">
+					<span>
+						{{ post.date | date: "%Y年%m月%d日 %A %R " | replace:'Monday','星期一' | replace:'Tuesday','星期二' | replace:'Wednesday','星期三' | replace:'Thursday','星期四' | replace:'Friday','星期五' | replace:'Saturday','星期六' | replace:'Sunday','星期天' | replace:'年0','年' | replace:'月0','月' }} 
+					</span>
+				
+				</div>
+				<div class="index_recent_firstpost_content">
+					{{ post.content |  strip_html | strip_newlines | truncate:150 }}
+				</div>
+				<div class="index_recent_firstpost_postinfo">
+					&lt;<a href="{{ site.baseurl }}{{ post.url }}">阅读全文</a>&gt;
+					{% capture postid %}{{ post.url | downcase | replace:':','' | replace:'/','' }}{% endcapture %}
+					&lt;<a href="{{ site.baseurl }}{{ post.url }}#comments" class="ds-thread-count" data-thread-key="{{postid}}" data-count-type="comments"></a>&gt;
+				</div>
+			{% endfor %}
+		</div>
+		
+		<div class="clearFloat"></div>
+		
+	</div>
+	
+	<!-- 最新评论 -->
+	<div class="index_recent_comments">
+	<p>最新评论：</p>
+	<ul class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-admin="1" data-show-title="1" data-excerpt-length="140"></ul>
+	</div>
+</div>

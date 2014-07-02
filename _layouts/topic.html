@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<div class="topic_logo"><img src="{{ site.baseurl }}/assets/img/topic_{{ page.title | downcase }}.jpg" /></div>
+<div class="topic_description">{{ content }}</div>
+{% capture pagetitle %}{{ page.title }}{% endcapture %}
+<div class="topic_taglist">
+<ul>
+{% for tag in site.tags %} 
+	{% for post in tag[1] %}
+		{% if post.category == pagetitle %}
+			{% if forloop.first %}
+				<li><img src="{{site.baseurl}}/assets/img/icon_tag.png" /><a href="{{site.baseurl}}/topic/{{pagetitle | downcase}}#{{tag[0]}}">{{ tag[0]}}</a> ({{tag[1].size}})</li>
+			{% endif %}
+		{% endif %}	
+	{% endfor %}
+{% endfor %}
+</ul>
+</div>
+<div class="topic_postlist">
+<ul>
+{% for tag in site.tags %} 
+	{% for post in tag[1] %}
+		{% if post.category == pagetitle %}
+			{% if forloop.first %}
+			<a name="{{tag[0]}}"></a>
+			<h1>{{ tag[0]}}</h1>
+			<li>
+				<span class="topic_date">{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+				<br>&raquo;“<span>{{ post.content | strip_html | strip_newlines | truncate:45}}</span>”
+			</li>
+			{% else %}
+			<li>
+				<span class="topic_date">{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+				<br>&raquo;“<span>{{ post.content | strip_html | strip_newlines | truncate:45 }}</span>”	
+			</li>
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+{% endfor %}
+</ul>
+</div>
