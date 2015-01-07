@@ -3,4 +3,6 @@ timezone: Europe/Berlin
 permalink: /:categories/:year/:month/:day/:title
 paginate: 9
 markdown: redcarpet
+redcarpet:
+    extensions: ["tables"]
 pygments: true
