@@ -1,4 +1,4 @@
-/*****************************************************************************/
+﻿/*****************************************************************************/
 /*
 /* Common
 /*
@@ -15,7 +15,7 @@ html, body {
 	height:100%;
 }
 html {
-	background:url(../img/bodyBg.jpg) repeat;
+	background:url(../img/bodyBg.jpg) repeat fixed;
 	padding:0px 0px 2em 0px;
 }
 body {
@@ -306,15 +306,16 @@ pre code {
 	text-decoration:underline;
 }
 .index_bible {
-	height:3em;
+	height:auto;
 	font-size:16px;
+	margin-bottom:20px;
 	text-shadow:#aaa 0 0 10px;
 }
 /*最新第一篇文章*/
 .index_recent_posts {
 }
 .index_recent_firstpost {
-	width:40%;
+	width:39%;
 	float:left;
 	margin-left:20px;
 }
@@ -350,7 +351,7 @@ pre code {
 }
 /*最新文章列表*/
 .index_recent_posts_preview {
-	width:52%;
+	width:53%;
 	float:left;
 	border:1px solid #999;
 	border-radius:5px;
@@ -427,7 +428,7 @@ pre code {
 }
 .post_meta img {
 	width:11px;
-	padding:0px 3px 0px 3px;
+	padding:0px 0px 0px 3px;
 }
 .post_content {
 	text-align:justify;
