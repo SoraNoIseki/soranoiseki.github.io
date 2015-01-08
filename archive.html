@@ -18,12 +18,12 @@ title: 文章归档
 	{% endif %}
 	<li>
 		{% if post.title.size < 10 %}
-			<span class="archive_date">{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> 
+			<span class="archive_date">{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncate:28 }}</a> 
 			&rArr; “<span>{{ post.content  | strip_html | strip_newlines | truncate:25 }}</span>”
 			&raquo; <span><a href="/topic/{{ post.category | downcase }}/">{{ post.category }}</a>{{pagetitle}}</span> 
 		{% else %}
 			{% capture titlesize %}{{ 32 | minus:post.title.size }}{% endcapture %}
-			<span class="archive_date">{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> 
+			<span class="archive_date">{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncate:28 }}</a> 
 			&rArr; “<span>{{ post.content  | strip_html | strip_newlines | truncate:titlesize }}</span>”
 			&raquo; <span><a href="/topic/{{ post.category | downcase }}/">{{ post.category }}</a>{{pagetitle}}</span> 			
 		{% endif %}

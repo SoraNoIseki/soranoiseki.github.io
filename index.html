@@ -17,9 +17,8 @@ description: "欢迎搭乘遗迹の二次元列车，我是列车长天空の遗
 		})();
 	</script>
 	
-	<div class="index_bible">
-	不轻易发怒的，胜过勇士；治服己心的，强如取城。—— 箴言16:32
-	</div>
+	<!-- 经文 -->
+	{% include index_bible.html  %}
 	
 	<!-- 最新文章 -->
 	<div class="index_recent_posts">
@@ -32,8 +31,8 @@ description: "欢迎搭乘遗迹の二次元列车，我是列车长天空の遗
 				<ul>
 					{% capture postid %}{{ post.url | downcase | replace:':','' | replace:'/','' }}{% endcapture %}
 					<li class="index_recent_posts_preview_title">
-					<span>{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-					&raquo; <a href="{{ site.baseurl }}{{ post.url }}#comments" class="ds-thread-count" data-thread-key="{{postid}}" data-count-type="comments"></a>
+					<span>{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncate:18 }}</a>
+					<!--&raquo; <a href="{{ site.baseurl }}{{ post.url }}#comments" class="ds-thread-count" data-thread-key="{{postid}}" data-count-type="comments"></a>-->
 					</li>
 				</ul>				
 				{% endfor %}
@@ -68,7 +67,7 @@ description: "欢迎搭乘遗迹の二次元列车，我是列车长天空の遗
 		<!-- 最新第一篇文章 -->
 		<div class="index_recent_firstpost">
 			{% for post in site.posts limit:1 %}
-				<div class="index_recent_firstpost_title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>
+				<div class="index_recent_firstpost_title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncate:15 }}</a></div>
 				<div class="index_recent_firstpost_meta">
 					<span>
 						{{ post.date | date: "%Y年%m月%d日 %A %R " | replace:'Monday','星期一' | replace:'Tuesday','星期二' | replace:'Wednesday','星期三' | replace:'Thursday','星期四' | replace:'Friday','星期五' | replace:'Saturday','星期六' | replace:'Sunday','星期天' | replace:'年0','年' | replace:'月0','月' }} 

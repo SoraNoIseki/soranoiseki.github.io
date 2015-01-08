@@ -31,11 +31,11 @@ layout: default
 <div class="post_links">
 	<span class="post_links_next">
 		{% if page.next %}
-		&lt;&lt; <a href="{{page.next.url}}">上一篇：{{page.next.title}}</a> {% else %}
+		&lt;&lt; <a href="{{page.next.url}}">上一篇：{{page.next.title | truncate:20}}</a> {% else %}
 		&lt;&lt; 这是第一篇
 		{% endif %} 
 	</span> 
-	<span class="post_links_pre"> {% if page.previous %} <a href="{{page.previous.url}}">下一篇：{{page.previous.title}}</a> &gt;&gt;
+	<span class="post_links_pre"> {% if page.previous %} <a href="{{page.previous.url}}">下一篇：{{page.previous.title | truncate:20}}</a> &gt;&gt;
 		{% else %}
 		这是最后一篇 &gt;&gt;
 		{% endif %}
