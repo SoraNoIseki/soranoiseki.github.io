@@ -22,7 +22,8 @@ layout: default
 		{{ page.date | date: "%Y年%m月%d日 %A %Z %R " | replace:'Monday','星期一' | replace:'Tuesday','星期二' | replace:'Wednesday','星期三' | replace:'Thursday','星期四' | replace:'Friday','星期五' | replace:'Saturday','星期六' | replace:'Sunday','星期天' | replace:'年0','年' |  | replace:'月0','月' | replace:'CET','西欧标准时间' | replace:'CEST','西欧夏令时' }} 
 		分类：<a href="{{site.baseurl}}/topic/{{page.categories}}" class="">{{page.categories}}</a>
 		{% for tag in page.tags%}		
-		<img src="{{site.baseurl}}/assets/img/icon_tag.png" />{{tag}}
+		<img src="{{site.baseurl}}/assets/img/icon_tag.png" />
+		<a href="{{site.baseurl}}/topic/{{page.category | downcase}}#{{tag}}">{{tag}}</a>
 		{% endfor %}
 	</span>
 </div>
