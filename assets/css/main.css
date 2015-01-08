@@ -457,8 +457,11 @@ pre code {
 .post_content a:hover {
 	text-decoration:underline;
 }
-.post_content ul, .post ol {
-	margin-left: 1.35em;
+.post_content ul {
+	margin-left: 2em;
+}
+.post_content ol {
+	margin-left: 2em;
 }
 .post_content img {
 	max-width: 95%;
