@@ -381,6 +381,7 @@ pre code {
 }
 .index_recent_posts_preview_list {
 	min-height:227px;
+	background:url(../img/9.png) right bottom no-repeat;
 }
 .index_recent_posts_preview_title {
 }
