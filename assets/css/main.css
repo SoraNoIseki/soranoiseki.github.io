@@ -51,7 +51,7 @@ hr:before {
     height: 30px;
     margin-top: 22px;    
 }
-
+/*
 blockquote {
 	background: #f9f9f9;
 	border-left: 10px solid #ccc;
@@ -67,8 +67,16 @@ blockquote:before {
 	margin-right: 0.25em;
 	vertical-align: -0.4em;
 }
+*/
+blockquote {
+	background: #f9f9f9;
+	border: 1px dashed #666;
+	margin: 1em 5px;
+	padding: 0px 12px;
+}
 blockquote p {
 	display: block;
+	color: #030;
 }
 code {
 	font-family: Consolas, "Courier New", \5FAE\8F6F\96C5\9ED1, \534E\6587\9ED1\4F53, Helvetica, Arial, sans-serif;
