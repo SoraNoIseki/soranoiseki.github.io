@@ -4,5 +4,5 @@ permalink: /:categories/:year/:month/:day/:title
 paginate: 9
 markdown: redcarpet
 redcarpet:
-    extensions: ["tables"]
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 pygments: true
