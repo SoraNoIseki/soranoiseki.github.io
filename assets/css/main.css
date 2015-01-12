@@ -482,6 +482,9 @@ pre code {
 	box-shadow:#555 3px 2px 5px;
 	background-color:rgba(100,100,100,0.05);
 }
+.post_content td {
+	padding-right:1.5em;
+}
 .post_links {
 	padding:10px 0px 10px 0px;
 	color:#555;
