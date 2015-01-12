@@ -83,7 +83,7 @@ code {
 	display: inline;
 	text-align: left;
 	font-size: 100%;
-	margin:0px .3em;
+	margin:0px .3em 1.2em 0px;
 	color: #900;
 }
 pre code {
