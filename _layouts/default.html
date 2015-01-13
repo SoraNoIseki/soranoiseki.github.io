@@ -20,6 +20,10 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/blog/assets/css/pygments/emacs.css">
 <link rel="stylesheet" href="{{ site.baseurl }}/blog/assets/css/main.css">
 <!-- Javascript -->
+<script src="{{ site.baseurl }}/assets/js/jquery-2.1.3.min.js"></script>
+<!--[if lt IE 9]>
+<script src="{{ site.baseurl }}/assets/js/jquery-1.6.1.min.js"></script>
+    <![endif]-->
 <!-- Google Analytics -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -30,13 +34,13 @@
   ga('send', 'pageview');
 </script>
 </head><body>
-<div class="site"> 
+<div class="site" id="top"> 
 	<!-- Header: logo & navbar -->
 	<div class="header">
 		<div class="header_top">
 			<div class="header_logo"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/img/logo.png" height="30px" /></a></div>
 			<!--[if lt IE 9]>
-			<div class="ifie">如果看到这句话并且整个页面什么都是方的说明您的浏览器已经过时了~</div>
+			<div class="ifie">如果看到这句话并且整个页面什么都是方的说明您的浏览器已经过时了</div>
 			<![endif]-->
 			<div class="header_social">
 				<ul>
@@ -85,6 +89,14 @@
 			页面使用HTML5+CSS3设计，Windows用户强烈推荐使用<a href="http://www.google.com/intl/zh-CN/chrome/" target="_blank">Chrome</a>浏览器观看，或者<a href="http://windows.microsoft.com/zh-cn/internet-explorer/ie-9-worldwide-languages" target="_blank">IE9</a>及<a href="http://windows.microsoft.com/zh-cn/internet-explorer/ie-10-worldwide-languages" target="_blank">以上</a>,<a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a>,<a href="http://www.opera.com/zh-cn" target="_blank">Opera</a>等浏览器 </p>
 	</div>
 </div>
-<a href="#" class="backToTop">回到顶部</a>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".backToTop").click(function(){
+			$("html,body").animate({scrollTop: $("#top").offset().top}, 400);
+		});
+	});
+</script>
+<button class="backToTop" type="button">回到顶部</button>
 </body>
 </html>

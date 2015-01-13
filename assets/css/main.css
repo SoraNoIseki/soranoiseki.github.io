@@ -101,6 +101,9 @@ pre code {
 	background-color: #efe;
 	padding: .5em 1em;
 }
+button {
+	font: 13px \5FAE\8F6F\96C5\9ED1, \534E\6587\9ED1\4F53, Helvetica, Arial, sans-serif;
+}
 /*****************************************************************************/
 /*
 /* Site
@@ -170,8 +173,8 @@ pre code {
 }
 .ifie {
 	color:#a55;
-	font-size:13px;
-	width:300px;
+	font-size:12px;
+	width:400px;
 	padding-top:5px;
 	float:left;
 }
