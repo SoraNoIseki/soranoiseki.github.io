@@ -635,7 +635,7 @@ pre code {
 	text-decoration:underline;
 }
 .topic_taglist li {
-	display:inline;
+	display:inline-block;
 	list-style:none;
 	margin-right:1em;
 }
