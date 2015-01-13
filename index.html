@@ -31,9 +31,8 @@ description: "欢迎搭乘遗迹の二次元列车，我是列车长天空の遗
 				<ul>
 					{% capture postid %}{{ post.url | downcase | replace:':','' | replace:'/','' }}{% endcapture %}
 					<li class="index_recent_posts_preview_title">
-					<span>{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncate:18 }}</a>
-					<!--&raquo; <a href="{{ site.baseurl }}{{ post.url }}#comments" class="ds-thread-count" data-thread-key="{{postid}}" data-count-type="comments"></a>-->
-					</li>
+					<span>{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncate:18 }}</a
+					></li>
 				</ul>				
 				{% endfor %}
 			</div>
@@ -89,9 +88,12 @@ description: "欢迎搭乘遗迹の二次元列车，我是列车长天空の遗
 		
 	</div>
 	
-	<!-- 最新评论
-	<div class="index_recent_comments">
-	<p>最新评论：</p>
-	<ul class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-admin="1" data-show-title="1" data-excerpt-length="140"></ul>
-	</div> -->
+	<!-- 留言 -->
+	{% include duoshuo_comment.html  %}
+	
+	<!-- 搜索框 -->
+	<form class="navbar-search" action="search.html" method="get">
+          <input name="query" type="text" class="search-query" placeholder="search">
+        </form>
+	
 </div>
