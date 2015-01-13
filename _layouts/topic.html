@@ -6,15 +6,33 @@ layout: default
 {% capture pagetitle %}{{ page.title }}{% endcapture %}
 <div class="topic_taglist">
 	<ul>
+		{% assign tagid = 1 %}
 		{% for tag in site.tags %}{% for post in tag[1] %}{% if post.category == pagetitle %}{% if forloop.first %}
-		<li><img src="{{site.baseurl}}/assets/img/icon_tag.png" /><a href="{{site.baseurl}}/topic/{{pagetitle | downcase}}#{{tag[0]}}">{{ tag[0]}}</a> ({{tag[1].size}})</li>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$(".tag{{tagid}}").click(function(){
+				$("html,body").animate({scrollTop: $("#{{tag[0]}}").offset().top - 25 }, 400);
+			});
+		});
+		</script>
+		<li><!--<img src="{{site.baseurl}}/assets/img/icon_tag.png" />-->({{tag[1].size}})<button class="tag{{tagid}}" type="button">{{ tag[0]}}</button></li>
+		{% assign tagid = tagid|plus:1 %}
 		{% endif %}{% endif %}{% endfor %}{% endfor %}
 	</ul>
 </div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".gotoTop").click(function(){
+			$("html,body").animate({scrollTop: $("#top").offset().top}, 400);
+		});
+	});
+</script>
 <div class="topic_postlist">
 	<ul>
 		{% for tag in site.tags %}{% for post in tag[1] %}{% if post.category == pagetitle %}{% if forloop.first %}
 		<h1 id="{{tag[0]}}">{{ tag[0]}}</h1>
+		<button class="gotoTop" type="button">TOP<span class="clearFloat"></span></button>
+		
 		<li> <span class="topic_date">{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <br>
 			&raquo;"<span>{{ post.content | strip_html | strip_newlines | truncate:45}}</span>" </li>
 		{% else %}

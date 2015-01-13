@@ -103,6 +103,10 @@ pre code {
 }
 button {
 	font: 13px \5FAE\8F6F\96C5\9ED1, \534E\6587\9ED1\4F53, Helvetica, Arial, sans-serif;
+	cursor:pointer;
+	background:none;
+	border:none;
+	outline:none;
 }
 /*****************************************************************************/
 /*
@@ -627,8 +631,20 @@ button {
 	float:left;
 }
 .topic_taglist {
-	clear:both;
-	padding-top:0.5em;
+	background:none;
+	width:120px;
+	height:auto;
+	display:block;
+	padding:10px 0px 10px 10px;
+	text-decoration:none;
+	text-align:right;
+	position:fixed;
+	left:50%;
+	top:50%;
+	margin-left:-560px;
+	margin-top:-70px;
+	z-index:10000;
+	text-shadow:#aaa 0 0 5px;
 }
 .topic_taglist a {
 	color:#000;
@@ -645,6 +661,12 @@ button {
 .topic_taglist img {
 	width:11px;
 	margin-right:4px;
+}
+.topic_taglist button {
+	font-size:14px;
+}
+.topic_taglist button:hover {
+	text-shadow: 0px 1px 1px #aaa;
 }
 .topic_postlist {
 	min-width:400px;
@@ -678,6 +700,17 @@ button {
 }
 .topic_postlist .topic_date {
 	font-family: Monaco, "Courier New", monospace;
+}
+.topic_postlist .gotoTop {
+	font-size:75%;
+	float:right;
+	border-radius:5px;
+	padding:0px 10px;
+	margin-top:-30px;
+	margin-right:-10px;
+}
+.topic_postlist .gotoTop:hover {
+	text-shadow: 0px 1px 1px #aaa;
 }
 /*****************************************************************************/
 /*
