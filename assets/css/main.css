@@ -647,6 +647,9 @@ button {
 @media screen and (max-width: 1200px) {
 	.about_nav {
 		visibility:hidden;
+		display:block;
+		width:0px;
+		height:0px;
 	}
 }
 
