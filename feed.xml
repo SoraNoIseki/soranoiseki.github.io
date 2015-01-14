@@ -1,0 +1,21 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>遗迹の二次元列车</title>
+		<description>欢迎搭乘遗迹の二次元列车，我是列车长天空の遗迹。</description>		
+		<link>{{ site.baseurl }}</link>
+		<atom:link href="{{ site.baseurl }}/feed.xml" rel="self" type="application/rss+xml" />
+		{% for post in site.posts limit:20 %}
+			<item>
+				<title>{{ post.title | xml_escape }}</title>
+				<dc:creator>天空の遗迹</dc:creator>
+				<description>{{ post.content | strip_html | strip_newlines | truncate:200 | xml_escape }}</description>
+                <pubDate>{{ post.date | date: "%a, %d %b %Y" }}</pubDate>
+				<link>{{ site.baseurl }}{{ post.url }}</link>
+				<guid isPermaLink="true">{{ site.baseurl }}{{ post.url }}</guid>
+			</item>
+		{% endfor %}
+	</channel>
+</rss>
