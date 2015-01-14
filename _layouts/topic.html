@@ -16,13 +16,13 @@ layout: default
 		{% assign tagid = 1 %}
 		{% for tag in site.tags %}{% for post in tag[1] %}{% if post.category == pagetitle %}{% if forloop.first %}
 		<script type="text/javascript">
-		$(document).ready(function(){
-			$(".tag{{tagid}}").click(function(){
-				$("html,body").animate({scrollTop: $("#{{tag[0]}}").offset().top - 115 }, 400);
+			$(document).ready(function(){
+				$("#tag{{tagid}}").click(function(){
+					$("html,body").animate({scrollTop: $("#{{tag[0]}}").offset().top - 115 }, 400);
+				});
 			});
-		});
 		</script>
-		<li><!--<img src="{{site.baseurl}}/assets/img/icon_tag.png" />--><img src="{{ site.baseurl }}/assets/img/icon_tag.png" /><button class="tag{{tagid}}" type="button">{{ tag[0]}}</button></li>
+		<li><img src="{{ site.baseurl }}/assets/img/icon_tag.png" /><button id="tag{{tagid}}" type="button">{{ tag[0]}}</button></li>
 		{% assign tagid = tagid|plus:1 %}
 		{% endif %}{% endif %}{% endfor %}{% endfor %}
 	</ul>

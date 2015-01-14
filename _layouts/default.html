@@ -52,7 +52,6 @@
 			<ul class="header_navbar">
 				<li><a href="{{ site.baseurl }}/" class="header_nav_home"></a></li>
 				<li><a href="{{ site.baseurl }}/archive.html" class="header_nav_archive"></a></li>
-				<!--<li><a href="{{ site.baseurl }}/topic/" class="header_nav_topic"></a></li>-->
 				<li><a href="{{ site.baseurl }}/about.html" class="header_nav_about"></a></li>
 				<li><a class="nav_contact"></a></li>
 				<li class="clearfloat"></li>
@@ -72,8 +71,6 @@
 			{% for category in site.categories %}
 			<li class="sidebar_icon"><a href="{{ site.baseurl }}/{{ category | first }}/" title="view all {{ category | first }} posts"><img src="{{ site.baseurl }}/assets/img/topic_{{ category | first }}.jpg" /></a></li>
 			{% endfor %}
-		
-		
 		</div>
 		<div class="clearFloat"></div>
 	</div>
@@ -93,7 +90,7 @@
 				});
 			});
 		</script>
-		<button class="backToTop" type="button"><img src="{{site.baseurl}}/assets/img/backtotop_text.png" class="backToTop_text" /></button>
+		<button class="backToTop" type="button"><img src="{{site.baseurl}}/assets/img/backtotop_text.png" /></button>
 	</div>
 </div>
 </body>
