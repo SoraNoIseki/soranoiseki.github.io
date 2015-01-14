@@ -18,7 +18,7 @@ layout: default
 		<script type="text/javascript">
 		$(document).ready(function(){
 			$(".tag{{tagid}}").click(function(){
-				$("html,body").animate({scrollTop: $("#{{tag[0]}}").offset().top - 130 }, 400);
+				$("html,body").animate({scrollTop: $("#{{tag[0]}}").offset().top - 115 }, 400);
 			});
 		});
 		</script>
@@ -33,7 +33,7 @@ layout: default
 		<h1 id="{{tag[0]}}">{{ tag[0]}}<span class="tag_size">({{tag[1].size}})</span></h1>
 		<button class="gotoLogo" type="button">TOP<span class="clearFloat"></span></button>
 		<li> <span class="topic_date">{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <br>
-			&raquo;"<span>{{ post.content | strip_html | strip_newlines | truncate:45}}</span>" </li>
+			&raquo;"<span>{{ post.content | strip_html | strip_newlines | truncate:45 }}</span>" </li>
 		{% else %}
 		<li> <span class="topic_date">{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <br>
 			&raquo;"<span>{{ post.content | strip_html | strip_newlines | truncate:45 }}</span>" </li>
