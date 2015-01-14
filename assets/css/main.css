@@ -148,7 +148,7 @@ button {
 .backToTop_text:hover {
 	opacity:1;
 }
-@media handheld {
+@media not screen {
 	.backToTop_text {
 		opacity:1;
 	}
