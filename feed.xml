@@ -7,7 +7,7 @@
 		<description>欢迎搭乘遗迹の二次元列车，我是列车长天空の遗迹。</description>		
 		<link>{{ site.baseurl }}</link>
 		<atom:link href="{{ site.baseurl }}/feed.xml" rel="self" type="application/rss+xml" />
-		{% for post in site.posts limit:20 %}
+		{% for post in site.posts limit:12 %}
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
 				<dc:creator>天空の遗迹</dc:creator>
