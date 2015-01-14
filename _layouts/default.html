@@ -74,7 +74,7 @@
 		<div class="sidebar"> 
 			<li class="sidebar_icon"><a href="{{ site.baseurl }}/archive.html" title="view all posts"><img src="{{ site.baseurl }}/assets/img/topic_archive.jpg" /></a></li>
 			{% for category in site.categories %}
-			<li class="sidebar_icon"><a href="{{ site.baseurl }}/topic/{{ category | first }}/" title="view all {{ category | first }} posts"><img src="{{ site.baseurl }}/assets/img/topic_{{ category | first }}.jpg" /></a></li>
+			<li class="sidebar_icon"><a href="{{ site.baseurl }}/{{ category | first }}/" title="view all {{ category | first }} posts"><img src="{{ site.baseurl }}/assets/img/topic_{{ category | first }}.jpg" /></a></li>
 			{% endfor %}
 		
 		
