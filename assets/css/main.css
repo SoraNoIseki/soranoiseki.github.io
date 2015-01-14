@@ -623,6 +623,32 @@ button {
 }
 .about_contact {
 }
+@media screen and (min-width: 1200px) {
+	.about_nav {
+		background:none;
+		width:120px;
+		height:auto;
+		display:block;
+		padding:10px 0px 10px 10px;
+		text-decoration:none;
+		text-align:right;
+		position:fixed;
+		left:50%;
+		top:220px;
+		margin-left:-513px;
+		z-index:10000;
+	}
+	.about_nav li {
+		display:block;
+		list-style:none;
+		margin-right:1em;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.about_nav {
+		visibility:hidden;
+	}
+}
 
 /*****************************************************************************/
 /*
