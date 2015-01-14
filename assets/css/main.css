@@ -630,6 +630,25 @@ button {
 	margin:0px 0px 0px 20px;
 	float:left;
 }
+/* 当页面宽度小于1200px时 */
+@media screen and (max-width: 1200px) {
+.topic_taglist {
+	clear:both;
+	padding-top:0.5em;
+	padding-right:20px;
+}
+.topic_taglist li {
+	display:inline-block;
+	list-style:none;
+	margin-right:1em;
+}
+.topic_taglist img {
+	width:11px;
+	margin-right:4px;
+}
+}
+/* 当页面宽度大于1200px时 */
+@media screen and (min-width: 1200px) {
 .topic_taglist {
 	background:none;
 	width:120px;
@@ -640,27 +659,35 @@ button {
 	text-align:right;
 	position:fixed;
 	left:50%;
-	top:50%;
-	margin-left:-560px;
-	margin-top:-70px;
+	top:384px;
+	margin-left:-550px;
 	z-index:10000;
-	text-shadow:#aaa 0 0 5px;
 }
+.topic_taglist li {
+	display:block;
+	list-style:none;
+	margin-right:1em;
+}
+.topic_taglist img {
+	float:right;
+	width:11px;
+	margin:7px 4px 0 8px;
+}
+}
+/* 当页面宽度小于770px时 */
+@media screen and (max-height: 770px) {
+.topic_taglist {
+	top:220px;
+}
+
+}
+
 .topic_taglist a {
 	color:#000;
 	text-decoration:none;
 }
 .topic_taglist a:hover {
 	text-decoration:underline;
-}
-.topic_taglist li {
-	display:inline-block;
-	list-style:none;
-	margin-right:1em;
-}
-.topic_taglist img {
-	width:11px;
-	margin-right:4px;
 }
 .topic_taglist button {
 	font-size:14px;

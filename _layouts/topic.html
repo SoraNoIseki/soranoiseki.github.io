@@ -15,7 +15,7 @@ layout: default
 			});
 		});
 		</script>
-		<li><!--<img src="{{site.baseurl}}/assets/img/icon_tag.png" />-->({{tag[1].size}})<button class="tag{{tagid}}" type="button">{{ tag[0]}}</button></li>
+		<li><!--<img src="{{site.baseurl}}/assets/img/icon_tag.png" />--><img src="{{ site.baseurl }}/assets/img/icon_tag.png" /><button class="tag{{tagid}}" type="button">{{ tag[0]}}</button></li>
 		{% assign tagid = tagid|plus:1 %}
 		{% endif %}{% endif %}{% endfor %}{% endfor %}
 	</ul>
@@ -30,7 +30,7 @@ layout: default
 <div class="topic_postlist">
 	<ul>
 		{% for tag in site.tags %}{% for post in tag[1] %}{% if post.category == pagetitle %}{% if forloop.first %}
-		<h1 id="{{tag[0]}}">{{ tag[0]}}</h1>
+		<h1 id="{{tag[0]}}">{{ tag[0]}}<span class="tag_size">({{tag[1].size}})</span></h1>
 		<button class="gotoTop" type="button">TOP<span class="clearFloat"></span></button>
 		
 		<li> <span class="topic_date">{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <br>
