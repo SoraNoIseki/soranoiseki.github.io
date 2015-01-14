@@ -10,10 +10,12 @@
 		{% for post in site.posts limit:12 %}
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
-				<dc:creator>天空の遗迹</dc:creator>
-				<description>{{ post.content | xml_escape }}</description>
+				<dc:creator>天空の遗迹</dc:creator>				
+				<description>{{ post.excerpt | xml_escape }}</description>
+				<content>{{ post.content | xml_escape }}</content>
                 <pubDate>{{ post.date | date: "%a, %d %b %Y" }}</pubDate>
 				<link>{{ site.baseurl }}{{ post.url }}</link>
+				<comments>{{ site.baseurl }}{{ post.url }}#comments</comments>
 				<guid isPermaLink="true">{{ site.baseurl }}{{ post.url }}</guid>
 			</item>
 		{% endfor %}
