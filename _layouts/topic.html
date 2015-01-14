@@ -13,7 +13,6 @@ layout: default
 {% capture pagetitle %}{{ page.title }}{% endcapture %}
 <div class="topic_taglist">
 	<ul>
-		<li><img src="{{ site.baseurl }}/assets/img/icon_backtotop.png" /><button class="gotoTop" type="button">TOP</button></li>
 		{% assign tagid = 1 %}
 		{% for tag in site.tags %}{% for post in tag[1] %}{% if post.category == pagetitle %}{% if forloop.first %}
 		<script type="text/javascript">
