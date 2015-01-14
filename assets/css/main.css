@@ -659,7 +659,7 @@ button {
 	text-align:right;
 	position:fixed;
 	left:50%;
-	top:384px;
+	top:383px;
 	margin-left:-550px;
 	z-index:10000;
 }
@@ -681,7 +681,6 @@ button {
 }
 
 }
-
 .topic_taglist a {
 	color:#000;
 	text-decoration:none;
@@ -738,6 +737,10 @@ button {
 }
 .topic_postlist .gotoTop:hover {
 	text-shadow: 0px 1px 1px #aaa;
+}
+.topic_postlist .tag_size {
+	color: #000;
+	margin-left:.5em;	
 }
 /*****************************************************************************/
 /*
