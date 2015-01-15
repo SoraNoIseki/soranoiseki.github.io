@@ -1,7 +1,13 @@
 ---
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rss version="2.0"
+  	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
 	<channel>
 		<title>遗迹の二次元列车</title>
 		<description>欢迎搭乘遗迹の二次元列车，我是列车长天空の遗迹。</description>		
@@ -11,8 +17,12 @@
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
 				<dc:creator>天空の遗迹</dc:creator>				
-				<description>{{ post.excerpt | xml_escape }}</description>
-				<content>{{ post.content | xml_escape }}</content>
+				<description>
+                	<![CDATA[{{ post.content | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]>
+				</description>
+				<content:encoded>
+					<![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}]]>
+				</content:encoded>
                 <pubDate>{{ post.date | date: "%a, %d %b %Y" }}</pubDate>
 				<link>{{ site.baseurl }}{{ post.url }}</link>
 				<comments>{{ site.baseurl }}{{ post.url }}#comments</comments>
