@@ -10,7 +10,7 @@
     xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
 	<channel>
 		<title>遗迹の二次元列车</title>
-		<description>欢迎搭乘遗迹の二次元列车，我是列车长天空の遗迹。</description>		
+		<description>欢迎搭乘遗迹の二次元列车，我是列车长天空の遗迹。</description>
 		<link>{{ site.baseurl }}</link>
 		<atom:link href="{{ site.baseurl }}/feed.xml" rel="self" type="application/rss+xml" />
 		{% for post in site.posts limit:12 %}
@@ -18,7 +18,11 @@
 				<title>{{ post.title | xml_escape }}</title>
 				<dc:creator>天空の遗迹</dc:creator>				
 				<description>
-                	<![CDATA[{{ post.content | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]>
+					{% if post.excerpt != "" %}
+                	<![CDATA[{{ post.excerpt | strip_html | expand_urls: site.url | cdata_escape }}]]>
+					{% else %}
+					<![CDATA[{{ post.content | strip_html | truncate: 200 | expand_urls: site.url | cdata_escape }}]]>
+					{% endif %}
 				</description>
 				<content:encoded>
 					<![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}]]>
