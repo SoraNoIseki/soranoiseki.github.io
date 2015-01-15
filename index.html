@@ -45,7 +45,7 @@ description: "欢迎搭乘遗迹の二次元列车，我是列车长天空の遗
 					<span>&laquo</span>
 				{% endif %}
 			
-				{% for page in (1..paginator.total_pages) limit:16%}
+				{% for page in (1..paginator.total_pages) limit:15%}
 					{% if page == paginator.page %}
 						{{ page | replace:'9','⑨' }}
 					{% elsif page == 1 %}
@@ -55,7 +55,7 @@ description: "欢迎搭乘遗迹の二次元列车，我是列车长天空の遗
 					{% endif %}
 				{% endfor %}
 			
-				{% if paginator.next_page <= 16 %}
+				{% if paginator.next_page <= 15 %}
 					<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
 				{% else %}
 					<span>&raquo;</span>
