@@ -716,7 +716,11 @@ button {
 	.topic_taglist img {
 		float:right;
 		width:11px;
-		margin:7px 4px 0 8px;
+		margin:8px 4px 0 8px;
+		opacity:0.4;
+	}
+	.topic_taglist li:hover img {
+		opacity:1;
 	}
 }
 .topic_taglist a {
