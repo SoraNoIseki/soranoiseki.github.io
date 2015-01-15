@@ -137,9 +137,8 @@ button {
 	text-decoration:none;
 	background:url(../img/backtotop.png) right bottom no-repeat;
 	position:fixed;
-	left:50%;
 	top:80px;
-	margin-left:-466px;
+	margin-left:-76px;
 	z-index:10000;
 }
 .backToTop img {

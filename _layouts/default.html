@@ -32,6 +32,17 @@
 <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/assets/img/icon.ico" media="screen" />
 </head><body>
 <div class="site" id="top"> 
+	<!-- 返回顶部 -->
+	<div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".backToTop").click(function(){
+					$("html,body").animate({scrollTop: $("#top").offset().top}, 400);
+				});
+			});
+		</script>
+		<button class="backToTop" type="button"><img src="{{site.baseurl}}/assets/img/backtotop_text.png" /></button>
+	</div>
 	<!-- Header: logo & navbar -->
 	<div class="header">
 		<div class="header_top">
@@ -81,17 +92,6 @@
 			所有内容均采用<a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>许可，转载请注明出处；
 			使用图标素材来源参见<a href="{{site.baseurl}}/credits.html">Credits</a>页面<br>
 			页面使用HTML5+CSS3设计，Windows用户强烈推荐使用<a href="http://www.google.com/intl/zh-CN/chrome/" target="_blank">Chrome</a>浏览器观看，或者<a href="http://windows.microsoft.com/zh-cn/internet-explorer/ie-9-worldwide-languages" target="_blank">IE9</a>及<a href="http://windows.microsoft.com/zh-cn/internet-explorer/ie-10-worldwide-languages" target="_blank">以上</a>,<a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a>,<a href="http://www.opera.com/zh-cn" target="_blank">Opera</a>等浏览器 </p>
-	</div>
-	<!-- 返回顶部 -->
-	<div>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$(".backToTop").click(function(){
-					$("html,body").animate({scrollTop: $("#top").offset().top}, 400);
-				});
-			});
-		</script>
-		<button class="backToTop" type="button"><img src="{{site.baseurl}}/assets/img/backtotop_text.png" /></button>
 	</div>
 </div>
 </body>
