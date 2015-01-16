@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 遗迹の二次元列车
-description: "欢迎搭乘遗迹の二次元列车，我是列车长天空の遗迹。"
+excerpt: "欢迎搭乘遗迹の二次元列车，我是列车长天空の遗迹。"
 ---
 <div class="index">
 	<!-- Duoshuo -->
@@ -31,8 +31,8 @@ description: "欢迎搭乘遗迹の二次元列车，我是列车长天空の遗
 				<ul>
 					{% capture postid %}{{ post.url | downcase | replace:':','' | replace:'/','' }}{% endcapture %}
 					<li class="index_recent_posts_preview_title">
-					<span>{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncate:18 }}</a
-					></li>
+					<span>{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncate:18 }}</a>
+					</li>
 				</ul>				
 				{% endfor %}
 			</div>
@@ -69,7 +69,7 @@ description: "欢迎搭乘遗迹の二次元列车，我是列车长天空の遗
 				<div class="index_recent_firstpost_title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncate:15 }}</a></div>
 				<div class="index_recent_firstpost_meta">
 					<span>
-						{{ post.date | date: "%Y年%m月%d日 %A %R " | replace:'Monday','星期一' | replace:'Tuesday','星期二' | replace:'Wednesday','星期三' | replace:'Thursday','星期四' | replace:'Friday','星期五' | replace:'Saturday','星期六' | replace:'Sunday','星期天' | replace:'年0','年' | replace:'月0','月' }} 
+						{{ post.date | date: "%Y年%m月%d日 %A " | replace:'Monday','星期一' | replace:'Tuesday','星期二' | replace:'Wednesday','星期三' | replace:'Thursday','星期四' | replace:'Friday','星期五' | replace:'Saturday','星期六' | replace:'Sunday','星期天' | replace:'年0','年' | replace:'月0','月' }} 
 					</span>
 				
 				</div>
