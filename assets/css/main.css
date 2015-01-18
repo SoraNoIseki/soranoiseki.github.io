@@ -467,6 +467,14 @@ button {
 	background:#d11;
 	box-shadow:#555 1px 1px 3px;
 }
+.index_topic_firstpost_category a {
+	color:#FFF;
+	text-decoration:none;
+}
+.index_topic_firstpost_category a:hover {
+	color:#FFF;
+	text-decoration:none;
+}
 .index_topic_firstpost_cover {
 	float:left;
 	width:150px;
@@ -489,14 +497,17 @@ button {
 .index_topic_firstpost_post_title a {
 	color:#609;
 	font-size:14px;
-	transition: all 0.3s;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-o-transition: all 0.3s;
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	-o-transition: all 0.1s;
+}
+.index_topic_firstpost_post_title a:hover {
+	text-decoration:none;
+	text-shadow:#aaa 0px 0px 1px;
 }
 .index_topic_firstpost_post_title span {
 }
-
 .index_topic_firstpost_post_meta {
 }
 .index_topic_firstpost_post_meta span {
