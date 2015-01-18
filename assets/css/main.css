@@ -139,7 +139,7 @@ button {
 	position:fixed;
 	top:80px;
 	margin-left:-76px;
-	z-index:10000;
+	z-index:20;
 }
 .backToTop img {
 	opacity:0;
@@ -315,6 +315,10 @@ button {
 	-ms-transform:translate(15px, 0px);
 	-moz-transform:translate(15px, 0px);
 	-o-transform:translate(15px, 0px);
+}
+.links {
+	margin-top:2em;
+	text-align:left;
 }
 /*****************************************************************************/
 /*
@@ -604,13 +608,12 @@ button {
 }
 .post_content img {
 	max-width: 95%;
-	height: auto;
-	border:#999 1px solid;
-	border-radius:3px;
-	-moz-border-radius:3px;
-	padding:10px;
+	border:#777 1px solid;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	padding:0px;
 	box-shadow:#555 3px 2px 5px;
-	background-color:rgba(100,100,100,0.05);
+	margin:0 0 .8em 0;
 }
 .post_content td {
 	padding-right:1.5em;

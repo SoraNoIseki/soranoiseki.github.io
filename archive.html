@@ -16,9 +16,9 @@ title: 文章归档
 		<ul>
 		{% endif %}
 		<li> {% if post.title.size < 10 %} <span class="archive_date">{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncate:28 }}</a> &rArr; “<span>{{ post.content  | strip_html | strip_newlines | truncate:25 }}</span>”
-				&raquo; <span><a href="/{{ post.category | downcase }}/">{{ post.category }}</a>{{pagetitle}}</span> 
+				&raquo; <span><a href="/{{ post.category | downcase }}/">{{ post.category | replace:'blog','博客' | replace:'tech','技术宅' | replace:'music','音乐'  }}</a></span> 
 			{% else %}{% capture titlesize %}{{ 32 | minus:post.title.size }}{% endcapture %} <span class="archive_date">{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncate:28 }}</a> &rArr; “<span>{{ post.content  | strip_html | strip_newlines | truncate:titlesize }}</span>”
-				&raquo; <span><a href="/{{ post.category | downcase }}/">{{ post.category }}</a>{{pagetitle}}</span> {% endif %} </li>
+				&raquo; <span><a href="/{{ post.category | downcase }}/">{{ post.category | replace:'blog','博客' | replace:'tech','技术宅' | replace:'music','音乐' }}</a></span> {% endif %} </li>
 		{% if forloop.last %}
 	</ul>
 		{% else %}{% if this_year != next_year %}
