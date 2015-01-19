@@ -31,10 +31,10 @@ layout: default
 		{% for tag in page.tags%}		
 		<img src="{{site.baseurl}}/assets/img/icon_tag.png" />
 		<a href="{{site.baseurl}}/{{page.category | downcase}}#{{tag}}">{{tag}}</a>
+		{% endfor %}
 		<img src="{{site.baseurl}}/assets/img/icon_comments.png" />
 		{% capture postid %}{{ page.url | downcase | replace:':','' | replace:'/','' }}{% endcapture %}
 		<button type="button" id="goToComment"><span class="ds-thread-count" data-thread-key="{{postid}}" data-count-type="comments"></span></button>
-		{% endfor %}
 	</span>
 </div>
 <div class="post_content"> {{ content }} </div>
