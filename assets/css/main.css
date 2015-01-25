@@ -287,10 +287,10 @@ button {
 	float:left;
 }
 .sidebar {
+	width:170px;
 	float:right;
 	margin-top:75px;
 	text-align:center;
-	padding-right:10px;
 }
 .sidebar li {
 	list-style:none;
@@ -301,7 +301,6 @@ button {
 .sidebar img {
 	width:150px;
 	box-shadow:#555 0 0 5px;
-	margin:5px 0px;
 }
 .sidebar_icon {
 	transition: all 0.2s;
@@ -318,17 +317,20 @@ button {
 }
 .links {
 	margin-top:1.5em;
-	text-align:left;
 }
 .links li {
-	display:block;
+	color:#033;
+	font-size:80%;
+	width:150px;
+	margin:0 10px 8px 10px;
 	box-shadow:#555 0 0 5px;
+	background:url(../img/links.png) no-repeat;
 }
 .links a:hover {
 }
-.links_title img{
-	width:150px;
+.links img {
 	box-shadow:#000 0 0 0px;
+	margin-bottom:10px;
 }
 /*****************************************************************************/
 /*
@@ -438,7 +440,6 @@ button {
 /*分页*/
 .pagination {
 	color:#900;
-	font-family: Monaco, "Courier New", monospace;
 }
 .pagination a {
 	text-decoration:none;
