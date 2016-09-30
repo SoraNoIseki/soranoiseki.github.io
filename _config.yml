@@ -5,5 +5,10 @@ paginate: 9
 markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "strikethrough", "underline", "space_after_headers", "superscript"]
-pygments: true
+## pygments: true
 excerpt_separator:
+
+syntax: false
+highlighter: true
+exclude: ["psd", "caogao", "*.txt", "*.bat", "*.zip", "*.rar"]
+gems: [jekyll-paginate]

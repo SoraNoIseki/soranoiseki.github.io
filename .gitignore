@@ -1,4 +1,18 @@
+#################
+## My website
+#################
+
+## folders
 _site/
+_drafts/
+psd/
+
+## bat
+cp.bat
+start.bat
+
+## config
+_config.yml
 
 #################
 ## Eclipse
