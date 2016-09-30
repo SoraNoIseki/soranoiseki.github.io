@@ -4,6 +4,6 @@ permalink: /:categories/:year/:month/:day/:title
 paginate: 9
 markdown: kramdown
 kramdown:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "strikethrough", "underline", "space_after_headers", "superscript"]
-pygments: true
+    input: GFM
+highlighter: rouge
 excerpt_separator:
