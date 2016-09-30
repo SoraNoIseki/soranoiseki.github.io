@@ -9,5 +9,5 @@ pygments: true
 excerpt_separator:
 
 #highlighter: true
-exclude: ["psd", "*.txt", "*.bat", "*.zip", "*.rar"]
-gems: [jekyll-paginate]
+#exclude: ["psd", "*.txt", "*.bat", "*.zip", "*.rar"]
+#gems: [jekyll-paginate]
