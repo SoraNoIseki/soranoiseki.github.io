@@ -527,6 +527,9 @@ button {
 .post_content embed {
 	margin:10px 0;
 }
+.post_content iframe {
+	margin:15px 0 0 0;
+}
 .post_links {
 	padding:10px 0px 10px 0px;
 	color:#555;
