@@ -8,7 +8,6 @@ redcarpet:
 ## pygments: true
 excerpt_separator:
 
-syntax: false
 highlighter: true
-exclude: ["psd", "caogao", "*.txt", "*.bat", "*.zip", "*.rar"]
+exclude: ["psd", "*.txt", "*.bat", "*.zip", "*.rar"]
 gems: [jekyll-paginate]
