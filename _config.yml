@@ -7,5 +7,3 @@ kramdown:
     input: GFM
 highlighter: rouge
 excerpt_separator:
-
-gems: [jekyll-paginate]
