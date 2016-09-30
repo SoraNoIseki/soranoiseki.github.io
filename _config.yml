@@ -7,7 +7,3 @@ redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "strikethrough", "underline", "space_after_headers", "superscript"]
 pygments: true
 excerpt_separator:
-
-#highlighter: true
-#exclude: ["psd", "*.txt", "*.bat", "*.zip", "*.rar"]
-#gems: [jekyll-paginate]
