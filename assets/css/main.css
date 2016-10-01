@@ -86,10 +86,13 @@ code {
 	margin:0px .3em 1.2em 0px;
 	color: #900;
 }
-pre code {
-	display: block;
+pre {
+	white-space: pre-wrap;
 	word-wrap: break-word;
 	word-break: normal;
+}
+pre code {
+	display: block;
 	text-indent: 0em;
 	font-family: Consolas, "Courier New", \5FAE\8F6F\96C5\9ED1, \534E\6587\9ED1\4F53, Helvetica, Arial, sans-serif;
 	font-size: 85%;

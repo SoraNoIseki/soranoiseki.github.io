@@ -4,17 +4,8 @@ permalink: /:categories/:year/:month/:day/:title
 paginate: 9
 markdown: kramdown
 kramdown:
-    input: GFM
-    extensions:
-        - autolink
-        - footnotes
-        - smart
-        - hard_wrap
-        - no_intra_emphasis
-        - strikethrough
-        - tables
-        - lax_spacing
-        - with_toc_data
+  input: GFM
+  hard_wrap: true
 highlighter: rouge
 excerpt_separator:
 
