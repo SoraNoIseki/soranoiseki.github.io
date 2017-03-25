@@ -45,7 +45,7 @@ layout: default
 		<img src="{{site.baseurl}}/assets/img/icon_comments.png" />
 		{% capture postid %}{{ page.url | downcase | replace:':','' | replace:'/','' }}{% endcapture %}
 		<button type="button" id="goToComment">
-			<span class='disqus-comment-count' data-disqus-url="{{ site.url }}{{ pape.url }}"></span>
+			<span class='disqus-comment-count' data-disqus-url="{{site.baseurl}}/{{page.url}}"></span>
 		</button>
 	</span>
 </div>
