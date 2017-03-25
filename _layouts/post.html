@@ -4,7 +4,7 @@ layout: default
 <script type="text/javascript">
 	$(document).ready(function(){
 		$("#goToComment").click(function(){
-			$("html,body").animate({scrollTop: $(".ds-thread").offset().top - 115 }, 400);
+			$("html,body").animate({scrollTop: $("#disqus_thread").offset().top - 115 }, 400);
 		});
 	});
 </script>
@@ -34,7 +34,9 @@ layout: default
 		{% endfor %}
 		<img src="{{site.baseurl}}/assets/img/icon_comments.png" />
 		{% capture postid %}{{ page.url | downcase | replace:':','' | replace:'/','' }}{% endcapture %}
-		<button type="button" id="goToComment"><span class="ds-thread-count" data-thread-key="{{postid}}" data-count-type="comments"></span></button>
+		<button type="button" id="goToComment">
+			<a href="{{site.baseurl}}/{{page.url}}#disqus_thread">Link</a>
+		</button>
 	</span>
 </div>
 <div class="post_content"> {{ content }} </div>
