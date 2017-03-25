@@ -35,7 +35,7 @@ layout: default
 		<img src="{{site.baseurl}}/assets/img/icon_comments.png" />
 		{% capture postid %}{{ page.url | downcase | replace:':','' | replace:'/','' }}{% endcapture %}
 		<button type="button" id="goToComment">
-			<a href="{{site.baseurl}}/{{page.url}}#disqus_thread">Link</a>
+			<script id="dsq-count-scr" src="//soranoiseki.disqus.com/count.js" async></script>
 		</button>
 	</span>
 </div>
