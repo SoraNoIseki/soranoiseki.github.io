@@ -3,111 +3,53 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0">
 <title>{{ page.title }}</title>
 {% if page.excerpt != "" %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% endif %}
 <meta name="author" content="天空の遗迹">
-<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <!-- CSS -->
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/pygments/emacs.css">
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/header.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/content.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/lightbox.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/pygments/emacs.css" />
 <!-- Javascript -->
 <script src="{{ site.baseurl }}/assets/js/jquery-2.1.3.min.js"></script>
 <!--[if lt IE 9]><script src="{{ site.baseurl }}/assets/js/jquery-1.6.1.min.js"></script><![endif]-->
-<!-- lightbox -->
 <script src="{{ site.baseurl }}/assets/js/lightbox.min.js"></script>
-<link href="{{ site.baseurl }}/assets/css/lightbox.css" rel="stylesheet" />
-<!-- Google Analytics -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-47783988-1', 'soranoiseki.com');
-  ga('send', 'pageview');
-</script>
+<script src="{{ site.baseurl }}/assets/js/google-analytics.js"></script>
 <!-- icon -->
 <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/assets/img/icon.ico" media="screen" />
 </head>
 
 <body>
 <div class="site" id="top"> 
-	<!-- 返回顶部 -->
-	<div>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$(".backToTop").click(function(){
-					$("html,body").animate({scrollTop: $("#top").offset().top}, 400);
-				});
-			});
-		</script>
-		<button class="backToTop" type="button"><img src="{{site.baseurl}}/assets/img/backtotop_text.png" /></button>
-	</div>
 	<!-- Header: logo & navbar -->
 	<div class="header">
-		<div class="header_top">
+		<div class="header_content">
+			<!-- LOGO -->
 			<div class="header_logo"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/img/logo.png" height="30px" /></a></div>
-			<!--[if lt IE 9]>
-			<div class="ifie">如果看到这句话并且整个页面什么都是方的说明您的浏览器已经过时了</div>
-			<![endif]-->
+			<!-- 导航菜单 -->
+			<div class="header_menu">
+				<ul>
+					<li><a href="{{site.baseurl}}/">HOME</a></li>
+					<li><a href="{{site.baseurl}}/archive.html">ARCHIVE</a></li>
+					<li><a href="{{site.baseurl}}/about.html">ME</a></li>
+				</ul>
+			</div>	
+			<!-- 社交菜单 -->			
 			<div class="header_social">
 				<ul>
 					<li><a href="{{site.baseurl}}/feed.xml" target="_blank"><img src="{{ site.baseurl }}/assets/img/icon_rss.png" /></a></li>
-					<li><a href="https://www.facebook.com/SoraNoIseki/" target="_blank"><img src="{{ site.baseurl }}/assets/img/icon_facebook.png" /></a></li>	
-					<li><a href="https://github.com/SoraNoIseki/" target="_blank"><img src="{{ site.baseurl }}/assets/img/icon_github.png" /></a></li>									
+					<li><a href="https://github.com/SoraNoIseki/" target="_blank"><img src="{{ site.baseurl }}/assets/img/icon_github.png" /></a></li>		
 					<li><a href="http://steamcommunity.com/id/iseki/" target="_blank"><img src="{{ site.baseurl }}/assets/img/icon_steam.png" /></a></li>
+					
 				</ul>
 			</div>
 			<div class="clearFloat"></div>
 		</div>
-		<!-- 导航菜单+头像 -->
-		<div class="header_menu">
-			<ul class="header_navbar">
-				<li> <a href="{{site.baseurl}}/" class="header_navbar_icon"><img src="{{ site.baseurl }}/assets/img/menu_home.png"></a>
-					<ul class="header_navbar_content">
-						<li class="header_navbar_main">home</li>
-						<li class="header_navbar_sub">回到首页</li>
-						<li class="header_navbar_bg"><img src="{{ site.baseurl }}/assets/img/t1.png"></li>
-					</ul>
-				</li>
-				<li> <a href="{{ site.baseurl }}/archive.html" class="header_navbar_icon"><img src="{{ site.baseurl }}/assets/img/menu_archive.png"></a>
-					<ul class="header_navbar_content">
-						<li class="header_navbar_main">archive</li>
-						<li class="header_navbar_sub">全部日志存档</li>
-						<li class="header_navbar_bg"><img src="{{ site.baseurl }}/assets/img/t1.png"></li>
-					</ul>
-				</li>
-				<li> <a href="" class="header_navbar_icon"><img src="{{ site.baseurl }}/assets/img/menu_topics.png"></a>
-					<ul class="header_navbar_content">
-						<li class="header_navbar_main">topics</li>
-						<li class="header_navbar_sub">日志专题分类[施工中]</li>
-						<li class="header_navbar_bg"><img src="{{ site.baseurl }}/assets/img/t1.png"></li>
-					</ul>
-				</li>
-				<li> <a href="{{ site.baseurl }}/about.html" class="header_navbar_icon"><img src="{{ site.baseurl }}/assets/img/menu_about.png"></a>
-					<ul class="header_navbar_content">
-						<li class="header_navbar_main">sora no iseki</li>
-						<li class="header_navbar_sub">博主简介</li>
-						<li class="header_navbar_bg"><img src="{{ site.baseurl }}/assets/img/t1.png"></li>
-					</ul>
-				</li>
-				<li> <a href="{{ site.baseurl }}/credits.html" class="header_navbar_icon"><img src="{{ site.baseurl }}/assets/img/menu_credits.png"></a>
-					<ul class="header_navbar_content">
-						<li class="header_navbar_main">credits</li>
-						<li class="header_navbar_sub">网站及使用素材版权说明</li>
-						<li class="header_navbar_bg"><img src="{{ site.baseurl }}/assets/img/t1.png"></li>
-					</ul>
-				</li>
-			</ul>
-			<!-- 头像 -->
-			<div class="header_avatar"><a href="{{ site.baseurl }}/about.html" title="博主介绍"><img src="{{ site.baseurl }}/assets/img/avatar.jpg" /></a>
-				<p class="header_avatar_name"><a href="{{ site.baseurl }}/about.html">天空の遗迹</a></p>
-			</div>
-			<div class="clearFloat"></div>
-		</div>
-		<!-- 导航菜单+头像 结束 -->
+		<div class="clearFloat"></div>
 	</div>
 	
 	<!-- main -->
@@ -130,12 +72,13 @@
 		</div>
 		<div class="clearFloat"></div>
 	</div>
+	
 	<!-- footer -->
 	<div class="footer">
 		<p>本站由超好用的<a href="https://github.com/" target="_blank">GitHub</a>和<a href="http://jekyllrb.com/" target="_blank">Jekyll</a>强力驱动<br />
 			所有内容均采用<a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>许可，转载请注明出处；
 			使用图标素材来源参见<a href="{{site.baseurl}}/credits.html">Credits</a>页面<br>
-			页面使用HTML5+CSS3设计，Windows用户强烈推荐使用<a href="http://www.google.com/intl/zh-CN/chrome/" target="_blank">Chrome</a>浏览器观看，或者<a href="http://windows.microsoft.com/zh-cn/internet-explorer/ie-9-worldwide-languages" target="_blank">IE9</a>及<a href="http://windows.microsoft.com/zh-cn/internet-explorer/ie-10-worldwide-languages" target="_blank">以上</a>,<a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a>,<a href="http://www.opera.com/zh-cn" target="_blank">Opera</a>等浏览器 </p>
+			页面使用HTML5+CSS3设计，推荐使用<a href="http://www.google.com/intl/zh-CN/chrome/" target="_blank">Chrome</a>浏览器观看，或者<a href="http://windows.microsoft.com/zh-cn/internet-explorer/ie-9-worldwide-languages" target="_blank">IE9</a>及<a href="http://windows.microsoft.com/zh-cn/internet-explorer/ie-10-worldwide-languages" target="_blank">以上</a>,<a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a>,<a href="http://www.opera.com/zh-cn" target="_blank">Opera</a>等浏览器 </p>
 	</div>
 </div>
 </body>

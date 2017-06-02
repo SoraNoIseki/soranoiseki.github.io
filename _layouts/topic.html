@@ -4,7 +4,7 @@ layout: default
 <script type="text/javascript">
 	$(document).ready(function(){
 		$(".gotoLogo").click(function(){
-			$("html,body").animate({scrollTop: $(".topic_logo").offset().top - 72 }, 400);
+			$("html,body").animate({scrollTop: $(".topic_logo").offset().top - 80 }, 400);
 		});
 	});
 </script>
@@ -32,11 +32,11 @@ layout: default
 		{% for tag in site.tags %}{% for post in tag[1] %}{% if post.category == pagetitle %}{% if forloop.first %}
 		<h1 id="{{tag[0]}}">{{ tag[0]}}<span class="tag_size">({{tag[1].size}})</span></h1>
 		<button class="gotoLogo" type="button">TOP<span class="clearFloat"></span></button>
-		<li> <span class="topic_date">{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <br>
-			&raquo;"<span>{{ post.content | strip_html | strip_newlines | truncate:45 }}</span>" </li>
+		<li> <span class="topic_date">{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <br />
+			&raquo; "<span>{{ post.content | strip_html | strip_newlines | truncate:50 }}</span>" </li>
 		{% else %}
-		<li> <span class="topic_date">{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <br>
-			&raquo;"<span>{{ post.content | strip_html | strip_newlines | truncate:45 }}</span>" </li>
+		<li> <span class="topic_date">{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <br />
+			&raquo; "<span>{{ post.content | strip_html | strip_newlines | truncate:50 }}</span>" </li>
 		{% endif %}{% endif %}{% endfor %}{% endfor %}
 	</ul>
 </div>

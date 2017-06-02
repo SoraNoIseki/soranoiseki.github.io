@@ -2,6 +2,14 @@
 layout: default
 title: 文章归档
 ---
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".gotoLogo").click(function(){
+			$("html,body").animate({scrollTop: $(".archive_title").offset().top - 80 }, 400);
+		});
+	});
+</script>
+
 <div class="archive">
 	<div class="archive_title">文章归档 Archive ({{site.posts.size}})</div>
 	<div class="archive_list">
@@ -11,19 +19,23 @@ title: 文章归档
 		{% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 		{% capture next_month %}{{ post.previous.date | date: "%b" | downcase }}{% endcapture %}
 		{% if forloop.first %}
-		<div class="archive_year">{{this_year}}</div>
+		<div class="archive_year">{{this_year}}<button class="gotoLogo" type="button">TOP<span class="clearFloat"></span></button></div>
 		<div class="archive_month"><img src="{{site.baseurl}}/assets/img/month_{{this_month}}.png" /></div>
 		<ul>
 		{% endif %}
-		<li> {% if post.title.size < 10 %} <span class="archive_date">{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncate:28 }}</a> &rArr; “<span>{{ post.content  | strip_html | strip_newlines | truncate:25 }}</span>”
-				&raquo; <span><a href="/{{ post.category | downcase }}/">{{ post.category | replace:'blog','博客' | replace:'tech','技术宅' | replace:'music','音乐'  }}</a></span> 
-			{% else %}{% capture titlesize %}{{ 32 | minus:post.title.size }}{% endcapture %} <span class="archive_date">{{ post.date | date: "%Y-%m-%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncate:28 }}</a> &rArr; “<span>{{ post.content  | strip_html | strip_newlines | truncate:titlesize }}</span>”
-				&raquo; <span><a href="/{{ post.category | downcase }}/">{{ post.category | replace:'blog','博客' | replace:'tech','技术宅' | replace:'music','音乐' }}</a></span> {% endif %} </li>
+		<li>
+			<span class="archive_date">{{ post.date | date: "%Y-%m-%d" }}</span> 
+			&raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncate:28 }}</a> 
+			&raquo; <span><a href="{{ site.baseurl }}/{{ post.category | downcase }}/">{{ post.category | replace:'blog','博客' | replace:'tech','技术宅' | replace:'music','音乐'  }}</a></span> 
+			<br />
+			&raquo; "<span>{{ post.content  | strip_html | strip_newlines | truncate:50 }}</span>"
+			 
+		</li>
 		{% if forloop.last %}
 	</ul>
 		{% else %}{% if this_year != next_year %}
 	</ul>
-	<div class="archive_year">{{next_year}}</div>
+	<div class="archive_year">{{next_year}}<button class="gotoLogo" type="button">TOP<span class="clearFloat"></span></button></div>
 	<div class="archive_month"><img src="{{site.baseurl}}/assets/img/month_{{next_month}}.png" /></div>
 	<ul>
 		{% else %}{% if this_month != next_month %}

@@ -1,0 +1,469 @@
+@charset "utf-8";
+
+/*****************************************************************************/
+/*
+/* Index
+/*
+/*****************************************************************************/
+.index a {
+	text-decoration:none;
+	color:#900;
+}
+.index a:hover {
+	text-decoration:underline;
+}
+.index_bible {
+	width:100%;
+	height:auto;
+	font-size:16px;
+	margin-bottom:20px;
+	text-shadow:#bbb 0 0 10px;
+}
+/*最新第一篇文章*/
+.index_recent_posts {
+}
+.index_recent_firstpost {
+	width:100%;
+}
+.index_recent_firstpost_title {
+	margin-bottom:0.5em;
+}
+.index_recent_firstpost_title a {
+	color:#609;
+	font-size:16px;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+.index_recent_firstpost_title a:hover {
+	text-decoration:none;
+	text-shadow:#999 1px 1px 3px;
+}
+.index_recent_firstpost_meta {
+	color: #777;
+	font-size:12px;
+}
+.index_recent_firstpost_meta img {
+	width:11px;
+	padding:0px 0px 0px 3px;
+}
+.index_recent_firstpost_content {
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:14px;
+	color:#063;
+	padding-top:.5em;
+	padding-bottom: .5em;
+}
+.index_recent_firstpost_postinfo {
+	color:#900;
+	font-size:13px;
+}
+/*专题最新文章*/
+.index_topic_firstpost {
+	margin-top:15px;
+}
+.index_topic_firstpost_title img {
+	width:180px;
+	margin-top:.8em;
+}
+.index_topic_firstpost_frame {
+	position:relative;
+	font-size:12px;
+	margin:15px 0;
+}
+.index_topic_firstpost_post {
+	float:left;
+	width:98%;
+}
+.index_topic_firstpost_post_title {
+	border-bottom:1px solid #eee;
+	padding-bottom:.5em;
+}
+.index_topic_firstpost_post_title a {
+	color:#609;
+	font-size:16px;
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	-o-transition: all 0.1s;
+}
+.index_topic_firstpost_post_title a:hover {
+	text-decoration:none;
+	text-shadow:#aaa 0px 0px 1px;
+}
+.index_topic_firstpost_post_title span {
+}
+.index_topic_firstpost_post_meta {
+	padding:.5em 0;
+}
+.index_topic_firstpost_post_meta span {
+	color: #777;
+	font-size:12px;
+}
+.index_topic_firstpost_post_meta img {
+	width:11px;
+	padding:0px 0px 0px 3px;
+}
+.index_topic_firstpost_post_meta a {
+	color:#030;
+}
+.index_topic_firstpost_post_content {
+	color:#333;
+	font-size: 14px;
+}
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+.post_title {
+	color:#609;
+	font-size:16px;
+}
+.post_title span {
+	color:#033;
+	font-size:12px;
+	display:block;
+	float:right;
+}
+.post_title a {
+	text-decoration:none;
+}
+.post_title a:hover {
+	text-decoration:underline;
+}
+.post_meta {
+	padding-top:10px;
+}
+.post_meta a {
+	text-decoration:none;
+	color:#363;
+}
+.post_meta a:hover {
+	text-decoration:underline;
+}
+.post_meta span {
+	color:#363;
+	font-size:12px;
+}
+.post_meta img {
+	width:11px;
+	padding:0px 0px 0px 3px;
+}
+.post_meta button {
+	color:#363;
+	font-size:12px;
+	padding-left:2px;
+}
+.post_meta button:hover {
+	text-decoration:underline;
+}
+.post_content h1 {
+	font-size:150%;
+	margin:2em 0 1em 0;
+	padding-bottom:8px;
+	border-bottom: 1px solid #999;
+	text-shadow:#f3f3f3 1px 1px 0px;
+}
+.post_content h2 {
+	font-size:120%;
+	margin-top:1.5em;
+	text-shadow:#f3f3f3 1px 1px 0px;
+}
+.post_content h3, h5, h6 {
+	font-size:100%;
+	margin:0;
+	margin:0.75em 0;
+	text-shadow:#f3f3f3 1px 1px 0px;
+}
+.post_content h4 { /*反白专用*/
+	font-size:100%;
+	font-weight:normal;
+	color:#f9f9f9;
+	margin: .6em 0;
+}
+.post_content {
+	text-align:justify;
+	text-justify:inter-ideograph;
+}
+.post_content a {
+	text-decoration:none;
+	color:#c00;
+}
+.post_content a:hover {
+	text-decoration:underline;
+}
+.post_content ul {
+	margin-left: 2em;
+}
+.post_content ol {
+	margin-left: 2em;
+}
+.post_content img {
+	max-width: 95%;
+	border:#777 1px solid;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	padding:0px;
+	box-shadow:#555 3px 2px 5px;
+	margin:0 0 .8em 0;
+}
+.post_content td {
+	padding-right:1.5em;
+}
+.post_content embed {
+	margin:10px 0;
+}
+.post_content iframe {
+	margin:15px 0 0 0;
+}
+.post_links {
+	padding:10px 0px 10px 0px;
+	color:#555;
+	font-size:12px;
+}
+.post_links a {
+	text-decoration:none;
+	color:#555;
+}
+.post_links a:hover {
+	text-decoration:underline;
+}
+.post_links_next {
+	float:left;
+	padding:10px 0px 15px 0px;
+}
+.post_links_pre {
+	float:right;
+	padding:10px 0px 15px 0px;
+}
+/*****************************************************************************/
+/*
+/* Archive
+/*
+/*****************************************************************************/
+.archive {
+	margin-bottom: 2em;
+}
+.archive li {
+	line-height: 2em;
+	list-style:none;
+}
+.archive span {
+	color: #777;
+	font-size:12px;
+}
+.archive .archive_date {
+	font-family: Monaco, "Courier New", monospace;
+}
+.archive a:link {
+	color:#000;
+	text-decoration:none;
+}
+.archive a:visited {
+	color:#000;
+	text-decoration:none;
+}
+.archive a:hover {
+	color: #000;
+	text-decoration:underline;
+}
+.archive a:active {
+	color:#000;
+	text-decoration:none;
+}
+.archive_title {
+	font-size:16px;
+}
+.archive_list {
+	margin-top:15px;
+}
+.archive_year {
+	height:1.5em;
+	font-family: Monaco, "Courier New", monospace;
+	font-size:150%;
+	margin:0.5em 0 1em 0;
+	border-bottom:1px solid #ccc;
+}
+.archive_month {
+	margin:0.8em 0 0 0;
+}
+.archive_month img {
+	height:21px;
+}
+.archive_list .gotoLogo {
+	font-size:50%;
+	float:right;
+	margin-top:5px;
+}
+.archive_list .gotoLogo:hover {
+	text-shadow: 0px 1px 1px #aaa;
+}
+/*****************************************************************************/
+/*
+/* page
+/*
+/*****************************************************************************/
+.page {
+	width:100%;
+	margin:0 auto 50px auto;
+}
+.page h1 {
+	height:1.8em;
+	margin:1.5em 0 0.8em 0;
+	font-size:16px;
+	font-style:normal;
+	font-weight:normal;
+	border-bottom:1px solid #ccc;
+}
+.page a {
+	color:#009;
+	margin:0px 3px;
+	text-decoration:none;
+}
+.page a:hover {
+	text-decoration:underline;
+}
+.page  li {
+	list-style:none;
+	margin:2px 0px;
+}
+.page_title {
+	font-size:16px;
+	color:#000;
+	margin-bottom:0.5em;
+}
+.page_content {
+	width:100%;
+	height: auto;
+}
+
+/*****************************************************************************/
+/*
+/* topics
+/*
+/*****************************************************************************/
+.topic_logo img {
+	float:left;
+	max-width:280px;
+	box-shadow:#aaa 0 0 5px;
+	border:1px solid #aaa;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	margin-bottom:10px;
+	margin-right:20px;
+}
+.topic_description {
+	width: 45%;
+	min-width: 280px;
+	float:left;
+}
+/* 当页面宽度小于1024px时 */
+@media screen and (max-width: 1024px) {
+	.topic_taglist {
+		clear:both;
+		padding-top:0.5em;
+		padding-right:20px;
+	}
+	.topic_taglist li {
+		display:inline-block;
+		list-style:none;
+		margin-right:1em;
+	}
+	.topic_taglist img {
+		width:11px;
+		margin-right:4px;
+	}
+}
+/* 当页面宽度大于1024px时 */
+@media screen and (min-width: 1024px) {
+	.topic_taglist {
+		background:none;
+		width:120px;
+		height:auto;
+		display:block;
+		padding:10px 0px 10px 10px;
+		text-decoration:none;
+		text-align:right;
+		position:fixed;
+		left:50%;
+		top:193px;
+		margin-left:-530px;
+		z-index:10000;
+	}
+	.topic_taglist li {
+		display:block;
+		list-style:none;
+		margin-right:1em;
+	}
+	.topic_taglist img {
+		float:right;
+		width:11px;
+		margin:8px 4px 0 8px;
+		opacity:0.4;
+	}
+	.topic_taglist li:hover img {
+		opacity:1;
+	}
+}
+.topic_taglist a {
+	color:#000;
+	text-decoration:none;
+}
+.topic_taglist a:hover {
+	text-decoration:underline;
+}
+.topic_taglist button {
+	font-size:14px;
+}
+.topic_taglist button:hover {
+	text-shadow: 0px 1px 1px #aaa;
+}
+.topic_postlist {
+	width:100%;
+	float:none;
+	clear:both;
+	margin-top:5px;
+}
+.topic_postlist a {
+	color:#000;
+	text-decoration:none;
+}
+.topic_postlist a:hover {
+	text-decoration:underline;
+}
+.topic_postlist li {
+	list-style:none;
+	margin:5px 0px;
+	line-height: 2em;
+	list-style:none;
+}
+.topic_postlist span {
+	color: #777;
+	font-size: 85%;
+}
+.topic_postlist h1 {
+	height:1.8em;
+	margin:1.5em 0 0.8em 0;
+	font-size:100%;
+	font-style:normal;
+	font-weight:normal;
+	border-bottom:1px solid #ccc;
+}
+.topic_postlist .topic_date {
+	font-family: Monaco, "Courier New", monospace;
+}
+.topic_postlist .gotoLogo {
+	font-size:75%;
+	float:right;
+	margin-top:-32px;
+}
+.topic_postlist .gotoLogo:hover {
+	text-shadow: 0px 1px 1px #aaa;
+}
+.topic_postlist .tag_size {
+	color: #000;
+	margin-left:.5em;
+}
