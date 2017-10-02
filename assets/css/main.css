@@ -57,7 +57,7 @@ hr {
 	background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc);
 	background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc);
 	background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);
-	margin: 10px 0 8px 0;
+	margin: 20px 0;
 }
 hr: before {
 	display: block;
