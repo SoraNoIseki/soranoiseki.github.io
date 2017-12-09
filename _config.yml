@@ -1,6 +1,6 @@
 baseurl:
 timezone: Europe/Berlin
-permalink: /:categories/:year/:month/:day/:title.html
+permalink: /:categories/:year/:month/:day/:title
 markdown: kramdown
 kramdown:
   input: GFM
