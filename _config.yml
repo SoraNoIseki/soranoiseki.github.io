@@ -1,12 +1,9 @@
 baseurl:
 timezone: Europe/Berlin
-permalink: /:categories/:year/:month/:day/:title
-paginate: 9
+permalink: /:categories/:year/:month/:day/:title.html
 markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: true
 highlighter: rouge
 excerpt_separator:
-
-#gems: [jekyll-paginate]
