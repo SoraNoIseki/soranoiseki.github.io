@@ -23,7 +23,7 @@ html, body {
 	height: 100%;
 }
 html {
-	background: url(../img/bodyBg.jpg) repeat fixed;
+	background-color: #FDFDFD; 
 	padding: 0 0 1em 0;
 }
 body {

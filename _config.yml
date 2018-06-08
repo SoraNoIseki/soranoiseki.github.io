@@ -1,4 +1,4 @@
-baseurl:
+baseurl: 
 timezone: Europe/Berlin
 permalink: /:categories/:year/:month/:day/:title
 markdown: kramdown
@@ -7,3 +7,4 @@ kramdown:
   hard_wrap: true
 highlighter: rouge
 excerpt_separator:
+limit_posts: 0
