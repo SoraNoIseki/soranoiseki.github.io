@@ -1,0 +1,13 @@
+baseURL = 'https://example.org/'
+
+[module]
+[module.hugoVersion]
+extended = false
+min = "0.116.0"
+
+[params]
+author = 'Max Mustermann'
+
+[params.header]
+image = 'images/header-banner-demo-2.jpg' # Path of image
+textStyle = "light"                       # "dark" or "light"

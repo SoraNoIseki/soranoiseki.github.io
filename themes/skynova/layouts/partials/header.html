@@ -1,0 +1,29 @@
+{{ $headerImage := resources.Get .Site.Params.Header.image }}
+{{ with $headerImage }}
+{{ with .Resize (printf "%dx%d jpg q90" .Width .Height) }}
+<div class="w-full h-[360px] bg-position-center bg-cover bg-no-repeat bg-center"
+    style="background-image: url('{{ .RelPermalink }}');"
+>
+{{ end }}
+{{ end }}
+
+    {{ if eq .Site.Params.Header.textStyle "dark" }}
+    <div class="absolute inset-0 bg-gradient-to-b from-white to-transparent opacity-70 h-36"></div>
+    <div class="text-gray-800 drop-shadow-lg">
+    {{ else }}
+    <div class="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-70 h-32"></div>
+    <div class="text-gray-100 drop-shadow-lg">
+    {{ end }}
+
+        <div class="container mx-auto px-4 py-6 flex flex-row flex-nowrap items-center justify-between gap-6">
+            <h1 class="text-2xl">
+                <a href="{{ .Site.Home.RelPermalink }}">{{ site.Title }}</a>
+            </h1>
+
+            <div class="flex flex-row flex-nowrap items-center justify-between gap-6">
+                {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+                {{ partial "nav-lang.html" . }}
+            </div>
+        </div>
+    </div>
+</div>

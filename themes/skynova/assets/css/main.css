@@ -1,0 +1,4 @@
+h1 {
+    color: blue;
+    @apply text-4xl;
+}
