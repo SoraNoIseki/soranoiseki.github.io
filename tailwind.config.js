@@ -7,7 +7,6 @@ module.exports = {
 		"./themes/**/assets/**/*.{js,css}", // Theme-specific assets
     	"./themes/**/layouts/**/*.html", // Theme-specific layouts
 		"./themes/**/content/**/*.md", // Example site content
-		"./themes/skynova/assets/css/main.css", // Example site content
 	],
 	theme: {
 		extend: {},

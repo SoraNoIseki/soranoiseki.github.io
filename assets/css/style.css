@@ -1066,6 +1066,18 @@ input[type="range"]::-ms-fill-lower {
   margin-inline-start: 0.75rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -1477,9 +1489,19 @@ input[type="range"]::-ms-fill-lower {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg {
@@ -1503,6 +1525,10 @@ input[type="range"]::-ms-fill-lower {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .leading-6 {
@@ -1594,6 +1620,121 @@ input[type="range"]::-ms-fill-lower {
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity, 1));
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+html:lang(zh-CN) body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC",
+		"Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC",
+		"WenQuanYi Micro Hei", "Heiti SC", "SimSun", "NSimSun", "Roboto",
+		Helvetica, Arial, sans-serif;
+}
+
+html:lang(zh-TW) body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang TC",
+		"Microsoft JhengHei", "Source Han Sans TC", "Noto Sans CJK TC",
+		"WenQuanYi Micro Hei", "Heiti TC", "MingLiU", "PMingLiU", "Roboto",
+		Helvetica, Arial, sans-serif;
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  font-family: "Oswald", serif;
+  font-weight: 400;
+}
+
+html:lang(zh-CN) .main-content h1,
+html:lang(zh-CN) .main-content h2,
+html:lang(zh-CN) .main-content h3,
+html:lang(zh-CN) .main-content h4,
+html:lang(zh-CN) .main-content h5,
+html:lang(zh-CN) .main-content h6 {
+  font-family: "Source Han Serif SC", "PingFang SC", "Microsoft YaHei",
+		"Source Han Sans SC", "Noto Sans CJK SC", "Roboto", Helvetica, Arial,
+		sans-serif;
+  font-weight: 500;
+}
+
+html:lang(zh-TW) .main-content h1,
+html:lang(zh-TW) .main-content h2,
+html:lang(zh-TW) .main-content h3,
+html:lang(zh-TW) .main-content h4,
+html:lang(zh-TW) .main-content h5,
+html:lang(zh-TW) .main-content h6 {
+  font-family: "Source Han Serif TC", "PingFang TC", "Microsoft JhengHei",
+		"Source Han Sans TC", "Noto Sans CJK TC", "Roboto", Helvetica, Arial,
+		sans-serif;
+  font-weight: 500;
+}
+
+.main-content h1 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.main-content h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.main-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.main-content h4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.main-content h5 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.main-content h6 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.main-content h1:first-child,
+.main-content h2:first-child,
+.main-content h3:first-child,
+.main-content h4:first-child,
+.main-content h5:first-child,
+.main-content h6:first-child {
+  margin-top: 0px;
+}
+
+.main-content h1 + h2,
+.main-content h2 + h3,
+.main-content h3 + h4,
+.main-content h4 + h5,
+.main-content h5 + h6 {
+  margin-top: 0px;
 }
 
 .hover\:bg-gray-100:hover {

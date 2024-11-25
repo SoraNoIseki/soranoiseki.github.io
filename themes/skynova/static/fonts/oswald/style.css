@@ -1,0 +1,120 @@
+/* oswald-200 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Oswald";
+	font-style: normal;
+	font-weight: 200;
+	src: url("./oswald-v53-latin-200.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* oswald-300 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Oswald";
+	font-style: normal;
+	font-weight: 300;
+	src: url("./oswald-v53-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* oswald-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Oswald";
+	font-style: normal;
+	font-weight: 400;
+	src: url("./oswald-v53-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* oswald-500 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Oswald";
+	font-style: normal;
+	font-weight: 500;
+	src: url("./oswald-v53-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* oswald-600 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Oswald";
+	font-style: normal;
+	font-weight: 600;
+	src: url("./oswald-v53-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* oswald-700 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: "Oswald";
+	font-style: normal;
+	font-weight: 700;
+	src: url("./oswald-v53-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+.oswald-thin {
+	font-family: "Oswald", serif;
+	font-weight: 200;
+	font-style: normal;
+}
+
+.oswald-light {
+	font-family: "Oswald", serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.oswald-regular {
+	font-family: "Oswald", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.oswald-medium {
+	font-family: "Oswald", serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.oswald-bold {
+	font-family: "Oswald", serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.oswald-black {
+	font-family: "Oswald", serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.oswald-thin-italic {
+	font-family: "Oswald", serif;
+	font-weight: 200;
+	font-style: italic;
+}
+
+.oswald-light-italic {
+	font-family: "Oswald", serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.oswald-regular-italic {
+	font-family: "Oswald", serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.oswald-medium-italic {
+	font-family: "Oswald", serif;
+	font-weight: 500;
+	font-style: italic;
+}
+
+.oswald-bold-italic {
+	font-family: "Oswald", serif;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.oswald-black-italic {
+	font-family: "Oswald", serif;
+	font-weight: 700;
+	font-style: italic;
+}

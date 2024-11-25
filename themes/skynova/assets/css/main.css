@@ -1,4 +1,2 @@
-h1 {
-    color: blue;
-    @apply text-4xl;
-}
+@import "./layout.css";
+@import "./content.css";

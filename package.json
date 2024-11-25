@@ -4,9 +4,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently npm:watch:*",
-    "watch:tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
+    "watch:tailwind": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
     "watch:hugo": "hugo server",
-    "vite:dev": "npx vite",
     "tailwind:watch": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
     "build": "hugo --cleanDestinationDir --minify",
     "test": "hugo"
@@ -25,8 +24,7 @@
     "flowbite": "^2.5.2",
     "postcss": "^8.4.49",
     "postcss-cli": "^11.0.0",
-    "tailwindcss": "^3.4.15",
-    "vite": "^5.4.11"
+    "tailwindcss": "^3.4.15"
   },
   "devDependencies": {
     "concurrently": "^9.1.0",

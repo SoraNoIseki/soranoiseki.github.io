@@ -1,7 +1,7 @@
 +++
 date = '2024-11-24T22:03:35+01:00'
 draft = false
-title = '資料保護'
+title = '資料保護聲明'
 slug = 'data-protection'
 +++
 # 資料保護聲明

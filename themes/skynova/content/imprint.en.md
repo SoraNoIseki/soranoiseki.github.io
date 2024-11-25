@@ -4,4 +4,4 @@ draft = false
 title = 'Imprint'
 slug = 'imprint'
 +++
-# Impressum
+# Imprint
