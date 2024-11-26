@@ -105,6 +105,6 @@ pageRef = "/"
 weight = 10
 
 [[languages.tc.menus.main]]
-name = "聯絡方式"
+name = "聯繫方式"
 pageRef = "/contact"
 weight = 40
