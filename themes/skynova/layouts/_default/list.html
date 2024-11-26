@@ -1,8 +1,9 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+{{ range .Pages }}
+	<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+	<p>{{ .Summary | plainify | truncate 150 }}</p>
+	<small>Published on {{ .Date.Format "2006-01-02" }}</small>
+{{ end }}
 {{ end }}

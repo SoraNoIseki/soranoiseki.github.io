@@ -1082,6 +1082,14 @@ input[type="range"]::-ms-fill-lower {
   margin-bottom: 1.5rem;
 }
 
+.\!mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.\!mb-4 {
+  margin-bottom: 1rem !important;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -1092,6 +1100,14 @@ input[type="range"]::-ms-fill-lower {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .ms-3 {
@@ -1116,6 +1132,10 @@ input[type="range"]::-ms-fill-lower {
 
 .block {
   display: block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -1242,12 +1262,20 @@ input[type="range"]::-ms-fill-lower {
   list-style-position: inside;
 }
 
+.\!list-none {
+  list-style-type: none !important;
+}
+
 .list-decimal {
   list-style-type: decimal;
 }
 
 .list-disc {
   list-style-type: disc;
+}
+
+.list-none {
+  list-style-type: none;
 }
 
 .grid-cols-4 {
@@ -1274,6 +1302,10 @@ input[type="range"]::-ms-fill-lower {
   flex-wrap: nowrap;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
@@ -1284,6 +1316,10 @@ input[type="range"]::-ms-fill-lower {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-3 {
@@ -1338,6 +1374,12 @@ input[type="range"]::-ms-fill-lower {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .rounded {
@@ -1588,6 +1630,14 @@ input[type="range"]::-ms-fill-lower {
   padding-bottom: 1.5rem;
 }
 
+.\!pl-0 {
+  padding-left: 0px !important;
+}
+
+.pl-0 {
+  padding-left: 0px;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
@@ -1649,6 +1699,10 @@ input[type="range"]::-ms-fill-lower {
 
 .italic {
   font-style: italic;
+}
+
+.\!leading-6 {
+  line-height: 1.5rem !important;
 }
 
 .leading-4 {
@@ -1963,12 +2017,14 @@ html:lang(zh-TW) .main-content h6 {
   list-style-position: inside;
   list-style-type: disc;
   padding-left: 1rem;
+  line-height: 1.5rem;
 }
 
 .main-content ol {
   margin-bottom: 1rem;
   list-style-position: inside;
   list-style-type: decimal;
+  line-height: 1.5rem;
 }
 
 .main-content li {
