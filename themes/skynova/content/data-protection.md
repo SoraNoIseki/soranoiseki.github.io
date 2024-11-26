@@ -1,10 +1,9 @@
 +++
-date = '2024-11-24T22:03:35+01:00'
+date = '2024-11-24T00:00:00+02:00'
 draft = false
 title = 'Datenschutzerklärung'
 slug = 'datenschutz'
 +++
-# Datenschutzerklärung
 
 Wir freuen uns über Ihr Interesse an unserer Website. Der Schutz Ihrer Privatsphäre ist uns sehr wichtig. Nachstehend informieren wir Sie über den Umgang mit Ihren Daten bei der Nutzung unserer Website.
 

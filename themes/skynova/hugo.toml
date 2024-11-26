@@ -8,6 +8,9 @@ min = "0.116.0"
 [params]
 author = 'Max Mustermann'
 
+[params.theme]
+displayPageChangeTime = true
+
 [params.header]
-image = 'images/header-banner-demo-2.jpg' # Path of image
+image = 'images/header-banner-demo-3.jpg' # Path of image
 textStyle = "light"                       # "dark" or "light"

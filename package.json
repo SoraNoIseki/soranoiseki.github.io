@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently npm:watch:*",
+    "dev": "rm -rf public/ & concurrently npm:watch:*",
     "watch:tailwind": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
     "watch:hugo": "hugo server",
     "tailwind:watch": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "concurrently": "^9.1.0",
+    "http-server": "^14.1.1",
     "postcss-import": "^16.1.0"
   }
 }

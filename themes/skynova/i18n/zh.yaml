@@ -1,0 +1,17 @@
+# zh.yaml
+home: "主页"
+about: "关于我们"
+contact: "联系"
+data-protection: "数据保护"
+impressum: "法律声明"
+posts: "文章"
+
+# contact
+phone: "电话"
+fax: "传真"
+email: "电子邮件"
+website: "网站"
+address: "地址"
+postal_code: "邮政编码"
+location: "城市"
+country: "国家"

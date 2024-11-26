@@ -1,7 +1,7 @@
 {{ $headerImage := resources.Get .Site.Params.Header.image }}
 {{ with $headerImage }}
 {{ with .Resize (printf "%dx%d jpg q90" .Width .Height) }}
-<div class="w-full h-[360px] bg-position-center bg-cover bg-no-repeat bg-center"
+<div class="w-full h-48 sm:h-64 lg:h-[360px] bg-position-center bg-cover bg-no-repeat bg-center overflow-hidden relative"
     style="background-image: url('{{ .RelPermalink }}');"
 >
 {{ end }}
@@ -21,7 +21,9 @@
             </h1>
 
             <div class="flex flex-row flex-nowrap items-center justify-between gap-6">
-                {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+                <div class="hidden md:block">
+                    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+                </div>
                 {{ partial "nav-lang.html" . }}
             </div>
         </div>

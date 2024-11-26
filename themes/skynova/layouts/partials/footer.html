@@ -1,8 +1,8 @@
-<div class="container mx-auto py-6 px-4 flex flex-row flex-nowrap gap-4 items-center justify-between">
+<div class="container mx-auto py-6 px-4 flex flex-col sm:flex-row flex-nowrap gap-4 items-center justify-between">
     <div>&copy; {{ .Site.Params.author }} {{ now.Year }}</div>
     <div class="flex flex-row flex-nowrap gap-3">
         <a href='{{ with $.Site.GetPage "data-protection" }}{{ .RelPermalink }}{{ end }}'>{{ i18n "data-protection" }}</a>
         <span>|</span>
-        <a href='{{ with $.Site.GetPage "imprint" }}{{ .RelPermalink }}{{ end }}'>{{ i18n "imprint" }}</a>
+        <a href='{{ with $.Site.GetPage "impressum" }}{{ .RelPermalink }}{{ end }}'>{{ i18n "impressum" }}</a>
     </div>
 </div>

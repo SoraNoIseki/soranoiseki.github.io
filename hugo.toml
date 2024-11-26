@@ -17,7 +17,6 @@ weight = 0
 disabled = false
 languageName = "Deutsch"
 languageCode = 'de-DE'
-contentDir = "content/de"
 title = "Meine Website"
 
 [[languages.de.menus.main]]
@@ -26,7 +25,7 @@ pageRef = "/"
 weight = 10
 
 [[languages.de.menus.main]]
-name = "Beiträge"
+name = "Neuigkeiten"
 pageRef = "/posts"
 weight = 20
 
@@ -48,7 +47,6 @@ weight = 1
 disabled = false
 languageName = "English"
 languageCode = 'en-US'
-contentDir = "content/en"
 title = "My Website"
 
 [[languages.en.menus.main]]
@@ -79,7 +77,6 @@ weight = 2
 disabled = false
 languageName = "简体中文"
 languageCode = "zh-CN"
-contentDir = "content/zh"
 title = "我的网站"
 
 [[languages.zh.menus.main]]
@@ -100,7 +97,6 @@ weight = 3
 disabled = false
 languageName = "繁體中文"
 languageCode = "zh-TW"
-contentDir = "content/tc"
 title = "我的網站"
 
 [[languages.tc.menus.main]]
