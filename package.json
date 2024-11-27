@@ -8,7 +8,8 @@
     "watch:hugo": "hugo server",
     "tailwind:watch": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
     "build": "hugo --cleanDestinationDir --minify",
-    "test": "hugo"
+    "test": "hugo", 
+    "preview": "http-server public/"
   },
   "keywords": [
     "Website",
