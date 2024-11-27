@@ -1,4 +1,4 @@
-baseURL = "https://soranoiseki.github.io/"
+baseURL = "https://example.org/"
 
 [module]
 [module.hugoVersion]

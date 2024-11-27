@@ -5,11 +5,12 @@
   "scripts": {
     "dev": "rm -rf public/ & concurrently npm:watch:*",
     "watch:tailwind": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
-    "watch:hugo": "hugo server",
-    "tailwind:watch": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
-    "build": "hugo --cleanDestinationDir --minify",
-    "test": "hugo", 
-    "preview": "http-server public/"
+    "watch:hugo": "hugo server --cleanDestinationDir",
+    "build:tailwind": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css",
+    "build": "npm run build:tailwind && hugo --cleanDestinationDir --minify",
+    "preview": "npm run build && http-server public/",
+    "clean": "rm -rf public/",
+    "test": "hugo"
   },
   "keywords": [
     "Website",
