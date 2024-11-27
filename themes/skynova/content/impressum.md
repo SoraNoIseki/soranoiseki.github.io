@@ -18,7 +18,7 @@ Max Mustermann
 
 Tel: 123456  
 Fax: 123456  
-E-Mail: [info@beispiel.de](mailto:info@beispiel.de)  
+E-Mail: {{< email user="info" domain="example.com" >}}
 
 **Geschäftsführer**:  
 Max Mustermann  

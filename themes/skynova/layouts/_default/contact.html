@@ -23,45 +23,50 @@
                 <address itemscope itemprop="address" itemtype="http://schema.org/PostalAddress" class="leading-6 mb-4 not-italic">
                     <!-- https://schema.org/PostalAddress -->
                     <div itemprop="streetAddress">{{ $contact.address }}</div>
-                    <div class="postalAddress"><span itemprop="postalCode">{{ $contact.postal_code }}</span>
+                    <div><span itemprop="postalCode">{{ $contact.postal_code }}</span>
                         <span itemprop="addressLocality">{{ $contact.location }}</span>
                     </div>
                     {{ if $contact.country }}
-                        <div class="country" itemprop="addressCountry">{{ $contact.country }}</div>
+                        <div itemprop="addressCountry">{{ $contact.country }}</div>
                     {{ end }}
                 </address>
             </div>
             <div class="flex-1">
                 <div class="leading-6 mb-4">
                     {{ if $contact.phone }}
-                    <div class="phone">
+                    <div>
                         <span class="font-semibold">{{ i18n "phone" }}:</span>
-                        <a href="tel:+494517098070" title="0451 709 807-0" class="tel">
+                        <a href="tel:+494517098070" title="0451 709 807-0">
                             <span itemprop="telephone">{{ $contact.phone }}</span>
                         </a>
                     </div>
                     {{ end }}
 
                     {{ if $contact.fax }}
-                    <div class="fax">
+                    <div>
                         <span class="font-semibold">{{ i18n "fax" }}:</span>
                         <span itemprop="faxNumber">{{ $contact.fax }}</span>
                     </div>
                     {{ end }}
 
                     {{ if $contact.email }}
-                    <div class="email">
+                    <div>
                         <span class="font-semibold">{{ i18n "email" }}:</span>
                         <span itemprop="email">
-                            <a class="mail" title="{{ $contact.email }}" href="mailto:{{ $contact.email }}">
-                                {{ $contact.email }}
-                            </a>
+                            {{ with $contact.email }}
+                                {{ $emailParts := split $contact.email "@" }}
+                                {{ $user := index $emailParts 0 }}
+                                {{ $domain := index $emailParts 1 }}
+                                {{ $shortcode := printf "{{< email user=\"%s\" domain=\"%s\" >}}" $user $domain }}
+                                {{ $safeEmail := $shortcode | markdownify }}
+                                {{ $safeEmail | safeHTML }}
+                            {{ end }}
                         </span>
                     </div>
                     {{ end }}
 
                     {{ if $contact.website }}
-                    <div class="website">
+                    <div>
                         <span class="font-semibold">{{ i18n "website" }}:</span>
                         <a href="{{ $contact.website }}" itemprop="url" title="{{ $contact.website }}">
                             {{ $contact.website }}
