@@ -7,4 +7,4 @@ url = "news"
 
 Page description of this list.
 
-[Tutorial to create a new post (Chinese)](/zh/posts)
+[Tutorial to create a new post (Chinese)](/zh/news)

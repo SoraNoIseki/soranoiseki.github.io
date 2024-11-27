@@ -1,7 +1,7 @@
 {{ $headerImage := resources.Get .Site.Params.Header.image }}
 {{ with $headerImage }}
 {{ with .Resize (printf "%dx%d jpg q90" .Width .Height) }}
-<div class="w-full h-48 sm:h-64 lg:h-[360px] bg-position-center bg-cover bg-no-repeat bg-center overflow-hidden relative"
+<div class="w-full h-48 sm:h-64 lg:h-[360px] bg-position-center bg-cover bg-no-repeat bg-center overflow-x-hidden relative"
     style="background-image: url('{{ .RelPermalink }}');"
 >
 {{ end }}
@@ -20,12 +20,33 @@
                 <a href="{{ .Site.Home.RelPermalink }}">{{ site.Title }}</a>
             </h1>
 
-            <div class="flex flex-row flex-nowrap items-center justify-between gap-6">
-                <div class="hidden md:block">
-                    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
-                </div>
+            <div class="hidden md:flex flex-row flex-nowrap items-center justify-between gap-6">
+                {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
                 {{ partial "nav-lang.html" . }}
             </div>
+
+            <div class="md:hidden">
+                <!-- Toggle Button -->
+                <button id="menu-toggle" class="text-xl z-50 w-8 h-8 bg-gray-700 text-white rounded-md focus:outline-none">
+                    ☰
+                </button>
+            </div>
         </div>
+    </div>
+</div>
+
+<!-- Sidebar Menu -->
+<div id="sidebar" class="fixed top-0 right-0 h-full w-56 bg-gray-800 text-white transform translate-x-full transition-transform duration-300 ease-in-out">
+    <div class="p-4 pr-8">
+        <div class="flex flex-nowrap flex-row items-center justify-between mb-4">
+            <button id="menu-close" class="p-2 font-lg text-white rounded-md focus:outline-none">
+                ✕
+            </button>
+            <h2 class="text-lg font-bold">{{ i18n "menu" }}</h2>
+        </div>
+        
+        {{ partial "mobile/menu.html" (dict "menuID" "main" "page" .) }}
+        <hr class="text-white my-6 w-full">
+        {{ partial "mobile/nav-lang.html" . }}
     </div>
 </div>
