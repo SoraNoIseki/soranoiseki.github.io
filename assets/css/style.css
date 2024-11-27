@@ -1392,6 +1392,10 @@ input[type="range"]::-ms-fill-lower {
   align-items: baseline;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
