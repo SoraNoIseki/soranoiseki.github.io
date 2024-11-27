@@ -1,0 +1,168 @@
+.main-content {
+	@apply text-base text-gray-700 leading-8;
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+	font-family: "Oswald", serif;
+	font-weight: 400;
+	@apply text-gray-800;
+}
+
+html:lang(zh-CN) .main-content h1,
+html:lang(zh-CN) .main-content h2,
+html:lang(zh-CN) .main-content h3,
+html:lang(zh-CN) .main-content h4,
+html:lang(zh-CN) .main-content h5,
+html:lang(zh-CN) .main-content h6 {
+	font-family: "Source Han Serif SC", "PingFang SC", "Microsoft YaHei",
+		"Source Han Sans SC", "Noto Sans CJK SC", "Roboto", Helvetica, Arial,
+		sans-serif;
+	font-weight: 500;
+}
+
+html:lang(zh-TW) .main-content h1,
+html:lang(zh-TW) .main-content h2,
+html:lang(zh-TW) .main-content h3,
+html:lang(zh-TW) .main-content h4,
+html:lang(zh-TW) .main-content h5,
+html:lang(zh-TW) .main-content h6 {
+	font-family: "Source Han Serif TC", "PingFang TC", "Microsoft JhengHei",
+		"Source Han Sans TC", "Noto Sans CJK TC", "Roboto", Helvetica, Arial,
+		sans-serif;
+	font-weight: 500;
+}
+
+.main-content h1 {
+	@apply text-3xl mt-8 mb-6;
+}
+
+.main-content h2 {
+	@apply text-2xl mt-6 mb-4;
+}
+
+.main-content h3 {
+	@apply text-xl mt-6 mb-4;
+}
+
+.main-content h4 {
+	@apply text-lg mt-4 mb-4;
+}
+
+.main-content h5 {
+	@apply text-base mt-4 mb-4;
+}
+
+.main-content h6 {
+	@apply text-sm mt-4 mb-4;
+}
+
+.main-content h1:first-child,
+.main-content h2:first-child,
+.main-content h3:first-child,
+.main-content h4:first-child,
+.main-content h5:first-child,
+.main-content h6:first-child {
+	@apply mt-0;
+}
+
+.main-content h1+h2,
+.main-content h2+h3,
+.main-content h3+h4,
+.main-content h4+h5,
+.main-content h5+h6 {
+	@apply mt-0;
+}
+
+.main-content p {
+	@apply mb-4 text-base text-gray-700 leading-6;
+}
+
+.main-content a {
+	@apply text-red-800 hover:underline;
+}
+
+.main-content pre {
+	@apply my-6 p-4 rounded-lg;
+}
+
+.main-content code {
+	@apply text-sm;
+}
+
+.main-content p code,
+.main-content li code {
+	@apply mx-1 px-2 py-1 bg-gray-200 rounded-md text-red-800;
+}
+
+.main-content li code{
+	@apply mx-0;
+}
+
+.main-content h1 a,
+.main-content h2 a,
+.main-content h3 a,
+.main-content h4 a,
+.main-content h5 a,
+.main-content h6 a {
+	@apply text-inherit;
+}
+
+.main-content ul {
+	@apply list-disc list-inside mb-4 pl-4 leading-6;
+}
+
+.main-content ol {
+	@apply list-decimal list-inside mb-4 leading-6;
+}
+
+.main-content li {
+	@apply mb-1;;
+}
+
+.main-content li:first-of-type {
+	@apply mt-1;
+}
+
+.main-content table {
+	@apply table-auto border-collapse w-full text-left my-6;
+}
+
+.main-content thead {
+	@apply bg-gray-100 text-gray-800;
+}
+
+.main-content th,
+.main-content td {
+	@apply border border-gray-200 px-4 py-2;
+}
+
+.main-content th {
+	@apply font-semibold;
+}
+
+.main-content tr:nth-child(even) {
+	@apply bg-gray-50;
+}
+
+.main-content input,
+.main-content textarea,
+.main-content select {
+	@apply block w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none;
+}
+
+.main-content button {
+	@apply px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:outline-none;
+}
+
+.main-content blockquote {
+	@apply border-l-4 border-blue-500 pl-4 italic text-gray-700 mb-4;
+}
+
+.main-content hr {
+	@apply my-6 border-t border-gray-200;
+}

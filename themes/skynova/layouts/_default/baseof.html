@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+	{{ partial "head.html" . }}
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+	<header class="bg-gray-50 border-b border-gray-200">
+		{{ partial "header.html" . }}
+	</header>
+	<main class="main-content container mx-auto px-4 md:px-8 py-6 md:py-12 bg-gray-50 shadow-lg">
+		{{ block "main" . }}{{ end }}
+	</main>
+	<footer class="bg-gray-800 text-white">
+		{{ partial "footer.html" . }}
+	</footer>
+</body>
+
+</html>

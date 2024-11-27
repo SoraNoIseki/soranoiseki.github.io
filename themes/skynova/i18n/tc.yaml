@@ -1,0 +1,19 @@
+# tc.yaml
+home: "主頁"
+about: "關於我們"
+contact: "聯繫"
+data_protection: "數據保護"
+impressum: "法律聲明"
+posts: "近期動態"
+back_to_list: "返回列表"
+tags: "標籤"
+
+# contact
+phone: "電話"
+fax: "傳真"
+email: "電子郵件"
+website: "網站"
+address: "地址"
+postal_code: "郵政編碼"
+location: "城市"
+country: "國家"

@@ -1,0 +1,19 @@
+{{ define "main" }}
+{{ .Content }}
+
+<div class="my-6">
+	<h2>{{ i18n "posts" }}</h2>
+	<ul class="!leading-6 !list-none !pl-0">
+		{{ range first 5 (where .Site.RegularPages "Type" "posts") }}
+		<li class="!mb-4">
+			<span class="flex flex-col sm:flex-row flex-nowrap gap-2 items-baseline mb-2">
+				<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+				<small class="text-gray-600 text-sm">{{ .Date.Format "2006-01-02" }}</small>
+			</span>
+			<span class="text-sm">{{ .Summary | plainify | truncate 150 }}</span>
+		</li>
+		{{ end }}
+	</ul>
+</div>
+
+{{ end }}

@@ -1,0 +1,19 @@
+# de.yaml
+home: "Startseite"
+about: "Über uns"
+contact: "Kontakt"
+data_protection: "Datenschutz"
+impressum: "Impressum"
+posts: "Neuigkeiten"
+back_to_list: "Zurück zur Übersicht"
+tags: "Tags"
+
+# contact
+phone: "Telefon"
+fax: "Fax"
+email: "E-Mail"
+website: "Webseite"
+address: "Adresse"
+postal_code: "PLZ"
+location: "Ort"
+country: "Land"

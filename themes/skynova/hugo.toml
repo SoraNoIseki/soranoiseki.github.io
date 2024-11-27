@@ -1,0 +1,22 @@
+baseURL = "https://soranoiseki.github.io/"
+
+[module]
+[module.hugoVersion]
+extended = false
+min = "0.116.0"
+
+[params]
+author = "Max Mustermann"
+description = "An example of a multilingual website"
+openGraphImage = "/images/og-image.png"
+keywords = "Hugo, Website, Multilingual"
+
+[params.theme]
+displayPageChangeTime = false
+
+[params.header]
+image = "images/header-banner-demo-3.jpg" # Path of image
+textStyle = "light"                       # "dark" or "light"
+
+[permalinks]
+posts = "/:slug/"
