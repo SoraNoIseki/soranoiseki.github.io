@@ -2,8 +2,12 @@
 <h1>{{ .Title }}</h1>
 {{ .Content }}
 {{ range .Pages }}
-	<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-	<p>{{ .Summary | plainify | truncate 150 }}</p>
-	<small>Published on {{ .Date.Format "2006-01-02" }}</small>
+	<div class="mb-8">
+		<div class="flex flex-col sm:flex-row flex-nowrap gap-2 items-baseline">
+			<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+			<small class="text-gray-600 text-sm">{{ .Date.Format "2006-01-02" }}</small>
+		</div>
+		<div>{{ .Summary | plainify | truncate 300 }}</div>
+	</div>
 {{ end }}
 {{ end }}

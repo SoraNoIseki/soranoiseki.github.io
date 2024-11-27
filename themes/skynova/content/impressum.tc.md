@@ -1,8 +1,8 @@
 +++
-date = '2024-11-24T00:00:00+02:00'
+date = "2024-11-24T00:00:00+02:00"
 draft = false
-title = '法律聲明'
-slug = 'impressum'
+title = "法律聲明"
+slug = "impressum"
 +++
 
 ## 我的網站

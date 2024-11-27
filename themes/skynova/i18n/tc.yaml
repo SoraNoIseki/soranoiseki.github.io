@@ -2,9 +2,11 @@
 home: "主頁"
 about: "關於我們"
 contact: "聯繫"
-data-protection: "數據保護"
+data_protection: "數據保護"
 impressum: "法律聲明"
 posts: "近期動態"
+back_to_list: "返回列表"
+tags: "標籤"
 
 # contact
 phone: "電話"

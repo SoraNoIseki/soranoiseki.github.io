@@ -2,9 +2,11 @@
 home: "Home"
 about: "About"
 contact: "Contact"
-data-protection: "Data Protection"
+data_protection: "Data Protection"
 impressum: "Impressum"
 posts: "News"
+back_to_list: "Back to List"
+tags: "Tags"
 
 # contact
 phone: "Phone"

@@ -1,8 +1,8 @@
 +++
-date = '2024-11-24T00:00:00+02:00'
+date = "2024-11-24T00:00:00+02:00"
 draft = false
-title = 'Data Protection'
-slug = 'data-protection'
+title = "Data Protection"
+slug = "data-protection"
 +++
 
 We are pleased about your interest in our website. Protecting your privacy is very important to us. Below, we provide information about the handling of your data when you use our website.

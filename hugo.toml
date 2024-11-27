@@ -1,23 +1,32 @@
-baseURL = 'https://example.org/'
-theme = 'skynova'
-
+baseURL = "https://example.org/"
+theme = "skynova"
+enableRobotsTXT = true 
 
 # Set the default content language
-defaultContentLanguage = 'de'
+defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = false
+
+# Global parameters
+# In each language, the title, description, and keywords can be overridden
+[params]
+author = "Max Mustermann"
 
 
 # Languages configuration
 [languages]
 
-
 ## Deutsch (default)
+
 [languages.de]
 weight = 0
 disabled = false
 languageName = "Deutsch"
-languageCode = 'de-DE'
+languageCode = "de-DE"
 title = "Meine Website"
+
+[languages.de.params]
+description = "Ein Beispiel für eine mehrsprachige Website"
+keywords = "Hugo, Website, Multilingual"
 
 [[languages.de.menus.main]]
 name = "Startseite"
@@ -46,8 +55,12 @@ weight = 40
 weight = 1
 disabled = false
 languageName = "English"
-languageCode = 'en-US'
+languageCode = "en-US"
 title = "My Website"
+
+[languages.en.params]
+description = "Ein Beispiel für eine mehrsprachige Website."
+keywords = "Hugo, Website, Multilingual"
 
 [[languages.en.menus.main]]
 name = "Home"
@@ -55,7 +68,7 @@ pageRef = "/"
 weight = 10
 
 [[languages.en.menus.main]]
-name = "Posts"
+name = "News"
 pageRef = "/posts"
 weight = 20
 
@@ -79,10 +92,19 @@ languageName = "简体中文"
 languageCode = "zh-CN"
 title = "我的网站"
 
+[languages.zh.params]
+description = "一个多语言网站的示例"
+keywords = "Hugo, 网站, 多语言"
+
 [[languages.zh.menus.main]]
 name = "主页"
 pageRef = "/"
 weight = 10
+
+[[languages.zh.menus.main]]
+name = "近期动态"
+pageRef = "/posts"
+weight = 20
 
 [[languages.zh.menus.main]]
 name = "联系方式"
@@ -98,6 +120,10 @@ disabled = false
 languageName = "繁體中文"
 languageCode = "zh-TW"
 title = "我的網站"
+
+[languages.tc.params]
+description = "一個多語言網站的示例"
+keywords = "Hugo, 網站, 多語言"
 
 [[languages.tc.menus.main]]
 name = "主頁"

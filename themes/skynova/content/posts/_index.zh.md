@@ -1,7 +1,8 @@
 +++
-title = '文章示范页面'
-date = 2023-01-01T08:30:00-07:00
+title = "文章示范页面"
+date = "2023-01-01T08:30:00-07:00"
 draft = false
+url = "news"
 +++
 
 欢迎来到文章主页！以下是创建新文章和自定义模板的指南。
@@ -33,17 +34,20 @@ hugo new content content/posts/my-first-post.md
 
 ```markdown
 +++
-title = "新文章标题"
+title = "post title"
 date = "2024-01-01"
 draft = false
-tags = ["示例", "教程"]
-slug = 'beispiel-artikel'
+description = "This is a description text"
+tags = ["tutorial", "news"]
+slug = "example-post"
 +++
 ```
 
 - `title`: 定义文章的标题。
-- `date`: 设置文章发布日期。通过 Hugo 自动生成的时间格式为 `2024-01-01T10:00:00+02:00`
+- `date`: 设置文章发布日期。通过 Hugo 自动生成的时间格式为 `2024-01-01T10:00:00+02:00`。
 - `draft`: 标记文章是否为草稿，false 表示发布。
+- `description`: 文章摘要，会显示在文章列表中，有利于搜索引擎优化（SEO）。
+- `tags`: 文章标签，可设置多个。
 - `slug`: （可选项）文章URL地址，请使用英文、数字和横线（-）；不定义此项则会默认根据文件名自动生成文章URL。**输入一个带有清晰语意的URL有利于提高文章被搜索引擎收录的可能性。**
 
 ### 书写文章正文
@@ -52,11 +56,12 @@ slug = 'beispiel-artikel'
 
 ```markdown
 +++
-title = "新文章标题"
+title = "post title"
 date = "2024-01-01"
 draft = false
-tags = ["示例", "教程"]
-slug = 'beispiel-artikel'
+description = "This is a description text"
+tags = ["tutorial", "news"]
+slug = "example-post"
 +++
 
 这是我的第一篇文章！Hugo 是一个强大的静态网站生成器。

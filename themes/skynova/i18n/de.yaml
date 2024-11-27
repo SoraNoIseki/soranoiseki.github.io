@@ -2,9 +2,11 @@
 home: "Startseite"
 about: "Über uns"
 contact: "Kontakt"
-data-protection: "Datenschutz"
+data_protection: "Datenschutz"
 impressum: "Impressum"
 posts: "Neuigkeiten"
+back_to_list: "Zurück zur Übersicht"
+tags: "Tags"
 
 # contact
 phone: "Telefon"

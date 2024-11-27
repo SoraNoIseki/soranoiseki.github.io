@@ -1,9 +1,9 @@
 +++
-date = '2024-11-24T00:00:00+02:00'
+date = "2024-11-24T00:00:00+02:00"
 draft = false
 layout = "contact"
-title = '聯繫方式'
-slug = 'contact'
+title = "聯繫方式"
+slug = "contact"
 +++
 
 ## 我們期待您的諮詢。

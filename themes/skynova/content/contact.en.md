@@ -1,9 +1,9 @@
 +++
-date = '2024-11-24T00:00:00+02:00'
+date = "2024-11-24T00:00:00+02:00"
 draft = false
 layout = "contact"
-title = 'Contact'
-slug = 'contact'
+title = "Contact"
+slug = "contact"
 +++
 
 ## We look forward to your inquiry.

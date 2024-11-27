@@ -9,7 +9,6 @@ Renders a menu for the given menu ID.
 
 {{- $page := .page }}
 {{- $menuID := .menuID }}
-<pre class="hidden">{{ site.Menus | jsonify }}</pre>
 {{- with index site.Menus $menuID }}
 <nav>
 	<ul class="flex flex-row flex-nowrap items-center text-lg gap-6">
