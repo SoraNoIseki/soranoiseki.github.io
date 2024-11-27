@@ -18,7 +18,7 @@ Max Mustermann
 
 电话：123456  
 传真：123456  
-电子邮箱：[mailto:info@beispiel.de](info@beispiel.de)
+电子邮箱：[info@beispiel.de](mailto:info@beispiel.de)
 
 **负责人**：  
 Max Mustermann
