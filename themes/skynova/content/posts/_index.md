@@ -7,4 +7,4 @@ url = "neuigkeiten"
 
 Beschreibung dieser Seite.
 
-[Anleitung zum Erstellen eines neuen Artikels (Chinesisch)](/zh/posts)
+[Anleitung zum Erstellen eines neuen Artikels (Chinesisch)](/zh/news)
