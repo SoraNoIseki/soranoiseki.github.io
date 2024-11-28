@@ -1,0 +1,4 @@
+{{ $encodedEmail := printf "%s@%s" (.Get "user") (.Get "domain") | base64Encode }}
+<a href="#" data-email="{{ $encodedEmail }}">
+    {{ .Get "user" }}&#64;{{ .Get "domain" }}
+</a>

@@ -18,7 +18,7 @@ Max Mustermann
 
 Phone: 123456  
 Fax: 123456  
-Email: [mailto:info@beispiel.de](info@beispiel.de)
+Email: {{< email user="info" domain="example.com" >}}
 
 **Managing Director**:  
 Max Mustermann  
