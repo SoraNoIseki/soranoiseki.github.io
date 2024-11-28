@@ -5,13 +5,30 @@ document.addEventListener("DOMContentLoaded", () => {
 	const toggleButton = document.getElementById("menu-toggle");
 	const closeButton = document.getElementById("menu-close");
 	const sidebar = document.getElementById("sidebar");
+	const overlay = document.getElementById("overlay");
 
-	// Add click event listener
-	toggleButton?.addEventListener("click", () => {
+	const toggleSideMenu = () => {
 		sidebar.classList.toggle("translate-x-full");
+		sidebar.classList.toggle("open");
+		overlay.classList.toggle("hidden");
+		document.body.classList.toggle("overflow-hidden");
+	}
+
+	// Toggle the sidebar
+	toggleButton?.addEventListener("click", () => {
+		toggleSideMenu();
 	});
 	closeButton?.addEventListener("click", () => {
-		sidebar.classList.toggle("translate-x-full");
+		toggleSideMenu();
+	});
+
+	// Close sidebar when clicking outside of it
+	document.addEventListener('click', function (event) {
+		var isClickInside = sidebar.contains(event.target) || toggleButton.contains(event.target);
+	
+		if (!isClickInside && sidebar.classList.contains("open")) {
+			toggleSideMenu();
+		}
 	});
 
 	// Replace the data-email attribute with a mailto link
