@@ -10,6 +10,7 @@ defaultContentLanguageInSubdir = false
 # In each language, the title, description, and keywords can be overridden
 [params]
 author = "Max Mustermann"
+noIndex = true
 
 
 # Languages configuration
