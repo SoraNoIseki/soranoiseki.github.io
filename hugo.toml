@@ -29,6 +29,9 @@ title = "Meine Website"
 description = "Ein Beispiel für eine mehrsprachige Website"
 keywords = "Hugo, Website, Multilingual"
 
+[languages.de.permalinks]
+posts = "/neuigkeiten/:slug/"
+
 [[languages.de.menus.main]]
 name = "Startseite"
 pageRef = "/"
@@ -62,6 +65,9 @@ title = "My Website"
 [languages.en.params]
 description = "Ein Beispiel für eine mehrsprachige Website."
 keywords = "Hugo, Website, Multilingual"
+
+[languages.en.permalinks]
+posts = "/news/:slug/"
 
 [[languages.en.menus.main]]
 name = "Home"
@@ -97,6 +103,9 @@ title = "我的网站"
 description = "一个多语言网站的示例"
 keywords = "Hugo, 网站, 多语言"
 
+[languages.zh.permalinks]
+posts = "/news/:slug/"
+
 [[languages.zh.menus.main]]
 name = "主页"
 pageRef = "/"
@@ -125,6 +134,9 @@ title = "我的網站"
 [languages.tc.params]
 description = "一個多語言網站的示例"
 keywords = "Hugo, 網站, 多語言"
+
+[languages.tc.permalinks]
+posts = "/news/:slug/"
 
 [[languages.tc.menus.main]]
 name = "主頁"
