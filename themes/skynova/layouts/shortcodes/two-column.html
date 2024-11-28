@@ -1,0 +1,13 @@
+{{ $parts := split .Inner "---" }}
+{{ $col1 := index $parts 0 | markdownify }}
+{{ $col2 := index $parts 1 | markdownify }}
+
+<div class="flex flex-nowrap flex-col sm:flex-row my-4 gap-x-8 gap-y-4">
+    <div class="w-full md:w-1/2">
+        {{ $col1 }}
+    </div>
+    <div class="w-full md:w-1/2">
+        {{ $col2 }}
+    </div>
+</div>
+  
