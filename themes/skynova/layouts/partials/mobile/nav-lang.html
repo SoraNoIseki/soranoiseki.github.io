@@ -2,28 +2,25 @@
 {{ $pageLang := .Page.Lang }}
 {{ $pageTranslations := .Page.AllTranslations }}
 
-{{ if gt (len $pageTranslations) 1 }}
-
-
 <ul class="text-white flex flex-col gay-2 text-right gap-3">
-        {{ range sort $siteLanguages "Weight" "asc" }}
-            {{ $lang := .Lang }}
-            {{ $translation := "" }}
-            {{ range $pageTranslations }}
-                {{ if eq .Lang $lang }}
-                    {{ $translation = . }}
-                {{ end }}
-            {{ end }}
-            {{ if $translation }}
-                <li>
-                    {{ if eq $pageLang $lang }}
-                        <span class="block font-bold text-lg">{{ .LanguageName }}</span>
-                    {{ else }}
-                        <a href="{{ $translation.RelPermalink }}">{{ .LanguageName }}</a>
-                    {{ end }}
-                </li>
+    {{ range sort $siteLanguages "Weight" "asc" }}
+        {{ $lang := .Lang }}
+        {{ $translation := "" }}
+        {{ range $pageTranslations }}
+            {{ if eq .Lang $lang }}
+                {{ $translation = . }}
             {{ end }}
         {{ end }}
-    </ul>
 
-{{ end }}
+        <li class="{{ if not $translation }}opacity-40{{ end }}">
+            {{ if or (eq $pageLang $lang) (not $translation) }}
+                <span class="block font-bold">
+                    {{ if $translation }}*{{ end }}
+                    {{ .LanguageName }}
+                </span>
+            {{ else }}
+                <a href="{{ $translation.RelPermalink }}">{{ .LanguageName }}</a>
+            {{ end }}
+        </li>
+    {{ end }}
+</ul>

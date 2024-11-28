@@ -5,7 +5,11 @@
 <meta name="keywords" content="{{ with .Keywords }}{{ . }}{{ else }}{{ .Site.Params.keywords }}{{ end }}">
 
 <link rel="canonical" href="{{ .Permalink }}">
+{{ if .Site.Params.noIndex }}
+<meta name="robots" content="noindex, nofollow">
+{{ else }}
 <meta name="robots" content="index, follow">
+{{ end }}
 
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 

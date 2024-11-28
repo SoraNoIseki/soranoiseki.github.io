@@ -2,7 +2,6 @@
 {{ $pageLang := .Page.Lang }}
 {{ $pageTranslations := .Page.AllTranslations }}
 
-{{ if gt (len $pageTranslations) 1 }}
 <button id="dropdownNavLang" data-dropdown-toggle="dropdown" class="text-white bg-gray-600 hover:bg-gray-700 focus:ring-0 focus:outline-none font-medium rounded-md text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800" type="button">
     {{ range $siteLanguages }}
         {{ if eq .Lang $pageLang }}
@@ -24,16 +23,14 @@
                     {{ $translation = . }}
                 {{ end }}
             {{ end }}
-            {{ if $translation }}
-                <li>
-                    {{ if eq $pageLang $lang }}
-                        <span class="block px-4 py-2 dark:hover:text-white font-bold">{{ .LanguageName }}</span>
-                    {{ else }}
-                        <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="{{ $translation.RelPermalink }}">{{ .LanguageName }}</a>
-                    {{ end }}
-                </li>
-            {{ end }}
+
+            <li class="{{ if not $translation }}opacity-40{{ end }}">
+                {{ if or (eq $pageLang $lang) (not $translation) }}
+                    <span class="block px-4 py-2 dark:hover:text-white font-bold">{{ .LanguageName }}</span>
+                {{ else }}
+                    <a class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="{{ $translation.RelPermalink }}">{{ .LanguageName }}</a>
+                {{ end }}
+            </li>
         {{ end }}
     </ul>
 </div>
-{{ end }}
