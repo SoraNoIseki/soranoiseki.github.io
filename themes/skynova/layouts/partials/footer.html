@@ -1,4 +1,4 @@
-<div class="container mx-auto pt-6 pb-10 px-4 flex flex-col sm:flex-row flex-nowrap gap-4 items-center justify-between">
+<div class="container max-w-screen-lg mx-auto pt-6 pb-10 px-4 flex flex-col sm:flex-row flex-nowrap gap-4 items-center justify-between">
     <div>&copy; {{ .Site.Params.author }} {{ now.Year }}</div>
     <div class="flex flex-row flex-nowrap gap-3">
         <a href='{{ with $.Site.GetPage "data-protection" }}{{ .RelPermalink }}{{ end }}'>{{ i18n "data_protection" }}</a>
