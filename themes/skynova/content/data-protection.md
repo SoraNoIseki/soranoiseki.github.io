@@ -7,13 +7,20 @@ slug = "datenschutz"
 
 Wir freuen uns über Ihr Interesse an unserer Website. Der Schutz Ihrer Privatsphäre ist uns sehr wichtig. Nachstehend informieren wir Sie über den Umgang mit Ihren Daten bei der Nutzung unserer Website.
 
-## Keine Datenerhebung
+## Datenerfassung auf dieser Website
 
-Unsere Website erhebt, speichert oder verarbeitet keine personenbezogenen Daten. Es werden keine Cookies verwendet, keine Benutzerinteraktionen gespeichert und keine IP-Adressen protokolliert.
+### Cookies
 
-## Keine Datenweitergabe an Dritte
+Unsere Website verwendet keine Cookies. Es werden keine personenbezogenen Daten durch Cookies erhoben oder gespeichert.
 
-Da wir keine Daten erheben, erfolgt auch keine Weitergabe an Dritte.
+### Anfrage per E-Mail, Telefon oder Telefax
+
+Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+
+Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar.
+
+Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.
+
 
 ## Keine Drittanbieter-Integration
 
