@@ -2,7 +2,7 @@
 {{ with $headerImage }}
 {{ with .Resize (printf "%dx%d jpg q90" .Width .Height) }}
 <div class="w-full h-48 sm:h-64 lg:h-[360px] bg-position-center bg-cover bg-no-repeat bg-center overflow-x-hidden relative"
-    style="background-image: url('{{ .RelPermalink }}');"
+    style="background-image: url('{{ .RelPermalink | absURL }}');"
 >
 {{ end }}
 {{ end }}
