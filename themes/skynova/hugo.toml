@@ -8,7 +8,8 @@ min = "0.116.0"
 [params]
 author = "Max Mustermann"
 description = "An example of a multilingual website"
-openGraphImage = "/images/og-image.png"
+logoImage = "/images/logo.webp"
+openGraphImage = "/images/og-image.jpg"
 keywords = "Hugo, Website, Multilingual"
 noIndex = true
 
